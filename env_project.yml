@@ -1,0 +1,4 @@
+name: env_project
+channels:
+  - defaults
+prefix: /usr/local/anaconda3/envs/env_project
