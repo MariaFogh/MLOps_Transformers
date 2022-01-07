@@ -1,6 +1,7 @@
 from transformers import AutoModelForSequenceClassification
 from torch.utils.data import DataLoader
 from transformers import AdamW, get_scheduler
+from datasets import load_metric
 
 import torch
 
@@ -22,7 +23,7 @@ def train_model():
     num_training_steps = num_epochs * len(train_dataloader)
     lr_scheduler = get_scheduler("linear", optimizer=optimizer, num_warmup_steps=0, num_training_steps=num_training_steps)
 
-    device = "cpu"#torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+    device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
     model.to(device)
 
     progress_bar = tqdm(range(num_training_steps))
@@ -31,7 +32,6 @@ def train_model():
     for epoch in range(num_epochs):
         for batch in train_dataloader:
             batch = {k: v.to(device) for k, v in batch.items()}
-            #batch = {k: print(v) for k, v in batch.items()}
             outputs = model(**batch)
             loss = outputs.loss
             loss.backward()
