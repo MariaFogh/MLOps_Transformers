@@ -27,6 +27,10 @@ def main(input_filepath, output_filepath):
 
     tokenized_datasets = raw_datasets.map(tokenize_function, batched=True)
 
+    tokenized_datasets = tokenized_datasets.remove_columns(["text"])
+    tokenized_datasets = tokenized_datasets.rename_column("label", "labels")
+    tokenized_datasets.set_format("torch")
+
     small_train_dataset = tokenized_datasets["train"].shuffle(seed=42).select(range(1000))
     small_eval_dataset = tokenized_datasets["test"].shuffle(seed=42).select(range(1000))
     full_train_dataset = tokenized_datasets["train"]
