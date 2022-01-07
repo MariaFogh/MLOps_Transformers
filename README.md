@@ -15,7 +15,7 @@ This project will investigate how to
 
 Framework:
 
-We intend to use the Transformer framework, where ...
+We intend to use the Transformer framework, where we more specifically will use
 
 Data:
 
