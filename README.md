@@ -1,6 +1,6 @@
 # 02476 Machine Learning Operations: Final Project
 
-A project using the [Transformer framework](https://github.com/huggingface/transformers) (repository from the 🤗 Huggingface group)
+A project using the [Transformers framework](https://github.com/huggingface/transformers) (repository from the 🤗 Huggingface group)
 
 ## Group members
 - Enny Tao (s174491)
