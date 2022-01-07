@@ -10,7 +10,7 @@ A project using the [Transformers framework](https://github.com/huggingface/tran
 
 ## Overall objective
 
-This project will investigate how to use Machine Learning Operations tools on a project. Specifically, we work with the [Google QUEST Q&A Labeling](https://www.kaggle.com/c/google-quest-challenge) competition from Kaggle.
+This project will investigate how to use Machine Learning Operations tools on a project. Specifically, the task is to classify whether movie reviews are positive or negative
 
 ## Framework
 
@@ -22,7 +22,7 @@ developed by Google, which is a Transformers-based machine-learning model for Na
 
 ## Data
 
-The data is found in the [Huggingface Datasets library](https://github.com/huggingface/datasets/) and consists of Imdb ratings. They have provided 25,000 highly polar movie reviews for training and 25,000 for testing. They also include an unlabelled version of the data. Specifically, the dataset contains a ‘text’ column, which is a string of the written review in itself, and a ‘label’ column with possible values 0 and 1, describing whether it is a negative or positive review, respectively.
+The data is found in the [Huggingface Datasets library](https://github.com/huggingface/datasets/) and consists of IMDB ratings. They have provided 25,000 highly polar movie reviews for training and 25,000 for testing. They also include an unlabelled version of the data. Specifically, the dataset contains a ‘text’ column, which is a string of the written review in itself, and a ‘label’ column with possible values 0 and 1, describing whether it is a negative or positive review, respectively.
 
 ## Model
 
