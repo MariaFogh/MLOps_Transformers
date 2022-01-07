@@ -18,6 +18,8 @@ We intend to use the Transformer framework, which provides thousands of pretrain
 
 ## Data
 
+The data is found in the [Huggingface Datasets library](https://github.com/huggingface/datasets/) and consists of Imdb ratings. They have provided 25,000 highly polar movie reviews for training and 25,000 for testing. They also include an unlabelled version of the data. Specifically, the dataset contains a ‘text’ column, which is a string of the written review in itself, and a ‘label’ column with possible values 0 and 1, describing whether it is a negative or positive review, respectively.
+
 ## Model
 
 
