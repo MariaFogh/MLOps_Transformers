@@ -10,7 +10,7 @@ A project using the [Transformers framework](https://github.com/huggingface/tran
 
 ## Overall objective
 
-This project will investigate how to use Machine Learning Operations tools on a project. Specifically, the task is to classify whether movie reviews are positive or negative
+This project will investigate how to use Machine Learning Operations tools on a project. Specifically, the task is to use a classifier to determinning for whether movie reviews are positive or negative. 
 
 ## Framework
 
