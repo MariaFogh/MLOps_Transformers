@@ -11,6 +11,8 @@ Maria Fogh
 
 Overall objective:
 
+This project will investigate how to 
+
 Framework:
 
 We intend to use the Transformer framework, where ...
