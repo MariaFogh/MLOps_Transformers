@@ -14,7 +14,11 @@ This project will investigate how to use Machine Learning Operations tools on a 
 
 ## Framework
 
-We intend to use the Transformer framework, which provides thousands of pretrained models, for various use cases such as text, vision and audio.
+In this project we intend to use the Transformers framework, which provides an array of pre-trained models,
+for various uses such as for instance text, vision and audio. We will in this project work with text data in
+order to classify movie-ratings from IMDB, hence the reason for exploiting such framework.
+We will more specifically employ the model BERT (Bidirectional Encoder Representations From Transformers) 
+developed by Google, which is a transformer-based machine-learning model for Natural Language Processing (NLP).
 
 ## Data
 
