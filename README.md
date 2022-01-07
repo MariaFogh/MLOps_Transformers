@@ -1,25 +1,24 @@
 # 02476 Machine Learning Operations: Final Project
 
-Transformer framework (repository from the 🤗 Huggingface group)
+A project using the [Transformer framework](https://github.com/huggingface/transformers) (repository from the 🤗 Huggingface group)
 
-Group: 
-Enny Tao, 
-Anton Rydahl, 
-Laurits Fromberg, &
-Maria Fogh
+## Group members
+- Enny Tao (s174491)
+- Anton Rydahl
+- Laurits Fromberg
+- Maria Fogh
 
+## Overall objective
 
-Overall objective:
+This project will investigate how to use our Machine Learning Operations tools on a project. Specifically, we work with the [HuggingArtists](https://github.com/AlekseyKorshuk/huggingartists) project made by Aleksey Korshuk. 
 
-This project will investigate how to 
+## Framework
 
-Framework:
+We intend to use the Transformer framework, which provides thousands of pretrained models, for various use cases such as text, vision and audio.
 
-We intend to use the Transformer framework, where we more specifically will use
+## Data
 
-Data:
-
-Model:
+## Model
 
 
 Project Organization
