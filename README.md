@@ -4,7 +4,7 @@ A project using the [Transformers framework](https://github.com/huggingface/tran
 
 ## Group members
 - Enny Tao (s174491)
-- Anton Rydahl
+- Anton Rydahl (s174515)
 - Laurits Fromberg (s174512)
 - Maria Fogh (s174498)
 
