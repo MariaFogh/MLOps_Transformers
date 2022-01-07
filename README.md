@@ -6,7 +6,7 @@ A project using the [Transformer framework](https://github.com/huggingface/trans
 - Enny Tao (s174491)
 - Anton Rydahl
 - Laurits Fromberg
-- Maria Fogh
+- Maria Fogh (s174498)
 
 ## Overall objective
 
