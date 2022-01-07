@@ -11,4 +11,12 @@ Maria Fogh
 
 Overall objective:
 
+Framework:
+
+We intend to use the Transformer framework, where ...
+
+Data:
+
+Model:
+
 
