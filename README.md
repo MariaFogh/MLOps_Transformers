@@ -1,6 +1,6 @@
 # 02476 Machine Learning Operations: Final Project
 
-A project using the [Transformers framework](https://github.com/huggingface/transformers) (repository from the 🤗 Huggingface group)
+A project using the [Transformers framework](https://github.com/huggingface/transformers) (repository from the 🤗 Huggingface group).
 
 ## Group members
 - Enny Tao (s174491)
@@ -10,7 +10,7 @@ A project using the [Transformers framework](https://github.com/huggingface/tran
 
 ## Overall objective
 
-This project will investigate how to use Machine Learning Operations tools in a project. We aim to exploit tools, including Cookiecutter for code structure to standardize the way of creating a project, Git to enable version control and collaboration, keep good coding practice (using e.g. Black eller Flake8), and hyperparameter fine tuning. To illustrate the usage of these tools, we have chosen the task of using a classifier to determine whether movie reviews are positive or negative.
+This project will investigate how to use Machine Learning Operations tools in a project. We aim to exploit tools, including Cookiecutter for code structure to standardize the way of creating a project, Git to enable version control and collaboration, keep good coding practice (using e.g. Black eller Flake8), and tune hyperparameters in a ... way. To illustrate the usage of these tools, we have chosen the task of using a classifier to determine whether movie reviews are positive or negative.
 
 ## Framework
 
