@@ -1,7 +1,24 @@
-MLOps_Transformers
-==============================
+# 02476 Machine Learning Operations: Final Project
 
-A short description of the project.
+Transformer framework (repository from the Huggingface group)
+
+Group: 
+Enny Tao, 
+Anton Rydahl, 
+Laurits Fromberg, &
+Maria Fogh
+
+
+Overall objective:
+
+Framework:
+
+We intend to use the Transformer framework, where ...
+
+Data:
+
+Model:
+
 
 Project Organization
 ------------
