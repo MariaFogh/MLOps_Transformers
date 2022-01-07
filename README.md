@@ -10,11 +10,11 @@ A project using the [Transformers framework](https://github.com/huggingface/tran
 
 ## Overall objective
 
-This project will investigate how to use Machine Learning Operations tools in a project. Specifically, the task is to use a classifier to determining whether movie reviews are positive or negative. 
+This project will investigate how to use Machine Learning Operations tools in a project. Specifically, the task is to use a classifier to determine whether movie reviews are positive or negative. 
 
 ## Framework
 
-In this project we intend to use the Transformers framework, which provides an array of pre-trained models,
+In this project we intend to use the Transformers framework (repository from the 🤗 Huggingface group), which provides an array of pre-trained models,
 for various uses such as text, vision and audio. We will in this project work with text data in
 order to classify movie-ratings from IMDB, hence the reason for exploiting such framework.
 We will more specifically employ the model BERT (Bidirectional Encoder Representations From Transformers) 
