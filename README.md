@@ -10,16 +10,25 @@ A project using the [Transformers framework](https://github.com/huggingface/tran
 
 ## Overall objective
 
-This project will investigate how to use Machine Learning Operations tools on a project. Specifically, we work with the [Google QUEST Q&A Labeling](https://www.kaggle.com/c/google-quest-challenge) competition from Kaggle.
+This project will investigate how to use Machine Learning Operations tools in a project. Specifically, the task is to use a classifier to determining whether movie reviews are positive or negative. 
 
 ## Framework
 
-We intend to use the Transformer framework, which provides thousands of pretrained models, for various use cases such as text, vision and audio.
+In this project we intend to use the Transformers framework, which provides an array of pre-trained models,
+for various uses such as text, vision and audio. We will in this project work with text data in
+order to classify movie-ratings from IMDB, hence the reason for exploiting such framework.
+We will more specifically employ the model BERT (Bidirectional Encoder Representations From Transformers) 
+developed by Google, which is a Transformers-based machine-learning model for Natural Language Processing (NLP).
 
 ## Data
 
+The data is found in the [Huggingface Datasets library](https://github.com/huggingface/datasets/) and consists of IMDB ratings. They have provided 25,000 highly polar movie reviews for training and 25,000 for testing. They also include an unlabelled version of the data. Specifically, the dataset contains a ‘text’ column, which is a string of the written review in itself, and a ‘label’ column with possible values 0 and 1, describing whether it is a negative or positive review, respectively.
+
 ## Model
 
+The BERT model was proposed in [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) by Jacob Devlin, Ming-Wei Chang, Kenton Lee and Kristina Toutanova. 
+
+We will aim at fine-tuning the pre-trained BERT-model and thereby, hopefully include the logging tool Weights and Bias (wandb) in order to track the experiment and additionally, use the build-in feature for doing hyperparameter sweeping in wandb as well. 
 
 Project Organization
 ------------
