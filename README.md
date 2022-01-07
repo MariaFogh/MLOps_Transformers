@@ -26,7 +26,7 @@ The data is found in the [Huggingface Datasets library](https://github.com/huggi
 
 ## Model
 
-In this project, we will use the BERT (Bidirectional Encoder Representations from Transformers) model which was proposed in [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding] (https://arxiv.org/abs/1810.04805) by Jacob Devlin, Ming-Wei Chang, Kenton Lee and Kristina Toutanova. 
+In this project, we will use the BERT (Bidirectional Encoder Representations from Transformers) model which was proposed in [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) by Jacob Devlin, Ming-Wei Chang, Kenton Lee and Kristina Toutanova. 
 
 We will aim at fine-tuning the pre-trained BERT-model and thereby, hopefully include the logging tool Weights and Bias (wandb) in order to track the experiment and additionally, use the build-in feature for doing hyperparameter sweeping in wandb as well. 
 
