@@ -10,7 +10,7 @@ A project using the [Transformers framework](https://github.com/huggingface/tran
 
 ## Overall objective
 
-This project will investigate how to use our Machine Learning Operations tools on a project. Specifically, we work with the [Google QUEST Q&A Labeling](https://www.kaggle.com/c/google-quest-challenge) from Kaggle.
+This project will investigate how to use our Machine Learning Operations tools on a project. Specifically, we work with the [Google QUEST Q&A Labeling](https://www.kaggle.com/c/google-quest-challenge) competition from Kaggle.
 
 ## Framework
 
