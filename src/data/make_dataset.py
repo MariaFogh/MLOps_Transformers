@@ -4,6 +4,7 @@ import logging
 import torch
 from datasets import load_dataset
 from transformers import AutoTokenizer
+import os
 
 
 def main():
@@ -11,7 +12,7 @@ def main():
     cleaned data ready to be analyzed (saved in ../processed).
     """
 
-    output_filepath = "./data/processed"
+    output_filepath = "/data/processed"
 
     logger = logging.getLogger(__name__)
     logger.info("making final data set from raw data")
@@ -35,6 +36,8 @@ def main():
     small_eval_dataset = tokenized_datasets["test"].shuffle(seed=42).select(range(1000))
     full_train_dataset = tokenized_datasets["train"]
     full_eval_dataset = tokenized_datasets["test"]
+
+    os.makedirs(output_filepath, exist_ok=True)
 
     torch.save(small_train_dataset, output_filepath + "/train_small.pt")
     torch.save(small_eval_dataset, output_filepath + "/eval_small.pt")

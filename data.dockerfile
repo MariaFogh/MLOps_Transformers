@@ -15,4 +15,4 @@ COPY data/ data/
 WORKDIR /
 RUN pip install -r requirements.txt --no-cache-dir
 
-ENTRYPOINT ["python", "-u", "src/data/make_dataset.py data/raw data/processed"]
+ENTRYPOINT ["python", "-u", "src/data/make_dataset.py"]
