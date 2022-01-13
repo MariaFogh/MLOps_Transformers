@@ -1,4 +1,9 @@
+# local package
+-e .
+
+# external requirements
 click==8.0.3
+flake8
 datasets==1.17.0
 python-dotenv==0.19.2
 setuptools==60.3.1
