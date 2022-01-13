@@ -1,0 +1,14 @@
+program: ./src/models/train_model.py
+method: bayes
+metric:
+  goal: minimize
+  name: training_loss
+parameters:
+  learn_rate:
+    min: 0.00001
+    max: 0.001
+  epochs:
+    min: 1
+    max: 10
+limits:
+  max_total_trials : 8
