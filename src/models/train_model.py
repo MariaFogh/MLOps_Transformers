@@ -1,6 +1,6 @@
 from transformers import AutoModelForSequenceClassification
 from torch.utils.data import DataLoader
-from transformers import AdamW, get_scheduler, AutoModel
+from transformers import AdamW, get_scheduler
 from datasets import load_metric
 
 import torch
@@ -15,7 +15,7 @@ def train_model():
     model_from_path = './models/pretrained_bert'
     model_to_path = './models/finetuned_bert'
     small_train_dataset = torch.load(input_filepath+'/train_small.pt')
-    print("The test set consits of")
+    print("The trining set concists of")
     print(small_train_dataset)
     train_dataloader = DataLoader(
         small_train_dataset, shuffle=True, batch_size=8)
@@ -32,7 +32,8 @@ def train_model():
             f"Downloaded and saved pretrained model to path {model_from_path}")
     else:
         print(f"Using pretrained BERT model from path {model_from_path}")
-        model = AutoModel.from_pretrained(model_from_path)
+        model = AutoModelForSequenceClassification.from_pretrained(
+            model_from_path)
 
     optimizer = AdamW(model.parameters(), lr=5e-5)
 
