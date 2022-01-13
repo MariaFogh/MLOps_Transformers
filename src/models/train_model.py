@@ -11,9 +11,12 @@ from tqdm.auto import tqdm
 def train_model():
     input_filepath = './data/processed'
     small_train_dataset = torch.load(input_filepath+'/train_small.pt')
+    print("The test set consits of")
     print(small_train_dataset)
     train_dataloader = DataLoader(
         small_train_dataset, shuffle=True, batch_size=8)
+
+    print("Downloading pretrained BERT model from Transformers")
     model = AutoModelForSequenceClassification.from_pretrained(
         "bert-base-cased", num_labels=2)
 
@@ -30,6 +33,7 @@ def train_model():
 
     progress_bar = tqdm(range(num_training_steps))
 
+    print(f"Training {num_epochs} epochs")
     model.train()
     for epoch in range(num_epochs):
         metric = load_metric("accuracy")
@@ -47,6 +51,7 @@ def train_model():
             metric.add_batch(predictions=predictions,
                              references=batch["labels"])
         metric.compute()
+        print(f"\tFinished epoch {epoch+1} of {num_epochs}")
 
 
 if __name__ == '__main__':

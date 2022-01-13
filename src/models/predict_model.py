@@ -8,9 +8,10 @@ import torch
 from tqdm.auto import tqdm
 
 
-def train_model():
+def test_model():
     input_filepath = './data/processed'
     small_eval_dataset = torch.load(input_filepath+'/eval_small.pt')
+    print("The test set consits of")
     print(small_eval_dataset)
     eval_dataloader = DataLoader(small_eval_dataset, batch_size=8)
 
@@ -36,4 +37,4 @@ def train_model():
 
 
 if __name__ == '__main__':
-    train_model()
+    test_model()
