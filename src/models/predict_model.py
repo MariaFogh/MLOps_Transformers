@@ -12,11 +12,11 @@ def test_model():
     input_filepath = './data/processed'
     model_path = './models/finetuned_bert'
     small_eval_dataset = torch.load(input_filepath+'/eval_small.pt')
-    print("The test set consits of")
+    print("The test set concists of")
     print(small_eval_dataset)
     eval_dataloader = DataLoader(small_eval_dataset, batch_size=8)
 
-    model = AutoModel.from_pretrained(model_path)
+    model = AutoModelForSequenceClassification.from_pretrained(model_path)
 
     device = torch.device(
         "cuda") if torch.cuda.is_available() else torch.device("cpu")

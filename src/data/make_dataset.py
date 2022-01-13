@@ -8,6 +8,7 @@ from datasets import load_dataset
 from transformers import AutoTokenizer
 import torch
 
+
 @click.command()
 @click.argument('input_filepath', type=click.Path(exists=True))
 @click.argument('output_filepath', type=click.Path())
@@ -31,15 +32,17 @@ def main(input_filepath, output_filepath):
     tokenized_datasets = tokenized_datasets.rename_column("label", "labels")
     tokenized_datasets.set_format("torch")
 
-    small_train_dataset = tokenized_datasets["train"].shuffle(seed=42).select(range(1000))
-    small_eval_dataset = tokenized_datasets["test"].shuffle(seed=42).select(range(1000))
+    small_train_dataset = tokenized_datasets["train"].shuffle(
+        seed=42).select(range(1000))
+    small_eval_dataset = tokenized_datasets["test"].shuffle(
+        seed=42).select(range(1000))
     full_train_dataset = tokenized_datasets["train"]
     full_eval_dataset = tokenized_datasets["test"]
 
-    torch.save(small_train_dataset,output_filepath+'/train_small.pt')
-    torch.save(small_eval_dataset,output_filepath+'/eval_small.pt')
-    torch.save(full_train_dataset,output_filepath+'/train.pt')
-    torch.save(full_eval_dataset,output_filepath+'/eval.pt')
+    torch.save(small_train_dataset, output_filepath+'/train_small.pt')
+    torch.save(small_eval_dataset, output_filepath+'/eval_small.pt')
+    torch.save(full_train_dataset, output_filepath+'/train.pt')
+    torch.save(full_eval_dataset, output_filepath+'/eval.pt')
 
 
 if __name__ == '__main__':
