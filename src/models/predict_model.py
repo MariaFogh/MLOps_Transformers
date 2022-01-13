@@ -1,25 +1,20 @@
-from transformers import AutoModelForSequenceClassification
-from torch.utils.data import DataLoader
-from transformers import AdamW, get_scheduler, AutoModel
-from datasets import load_metric
-
 import torch
-
-from tqdm.auto import tqdm
+from datasets import load_metric
+from torch.utils.data import DataLoader
+from transformers import AutoModelForSequenceClassification
 
 
 def test_model():
-    input_filepath = './data/processed'
-    model_path = './models/finetuned_bert'
-    small_eval_dataset = torch.load(input_filepath+'/eval_small.pt')
+    input_filepath = "./data/processed"
+    model_path = "./models/finetuned_bert"
+    small_eval_dataset = torch.load(input_filepath + "/eval_small.pt")
     print("The test set concists of")
     print(small_eval_dataset)
     eval_dataloader = DataLoader(small_eval_dataset, batch_size=8)
 
     model = AutoModelForSequenceClassification.from_pretrained(model_path)
 
-    device = torch.device(
-        "cuda") if torch.cuda.is_available() else torch.device("cpu")
+    device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
     model.to(device)
 
     metric = load_metric("accuracy")
@@ -36,5 +31,5 @@ def test_model():
     metric.compute()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_model()
