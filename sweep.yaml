@@ -10,5 +10,3 @@ parameters:
   epochs:
     min: 1
     max: 10
-limits:
-  max_total_trials : 8
