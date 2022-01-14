@@ -12,7 +12,7 @@ def main():
     cleaned data ready to be analyzed (saved in ../processed).
     """
 
-    output_filepath = "/data/processed"
+    output_filepath = "./data/processed"
 
     logger = logging.getLogger(__name__)
     logger.info("making final data set from raw data")
