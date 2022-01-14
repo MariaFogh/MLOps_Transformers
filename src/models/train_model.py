@@ -1,5 +1,6 @@
 import argparse
-from os.path import exists, environ
+from os.path import exists
+from os import environ
 
 import torch
 import wandb
