@@ -1,5 +1,5 @@
 import argparse
-from os.path import exists
+from os.path import exists,environ
 
 import torch
 import wandb
@@ -8,8 +8,10 @@ from torch.utils.data import DataLoader
 from tqdm.auto import tqdm
 from transformers import AdamW, AutoModelForSequenceClassification, get_scheduler
 
-
 def wandb_arg_parser():
+    environ["WANDB_API_KEY"] = "719c09fb68fba7368ba93fd0b304d7e1a2fb1a4a"
+    environ["WANDB_MODE"] = "offline"
+
     parser = argparse.ArgumentParser()
     args, leftovers = parser.parse_known_args()
     config_defaults = {"learning_rate": 5e-5, "epochs": 2}
@@ -19,7 +21,7 @@ def wandb_arg_parser():
     if hasattr(args, "learning_rate"):
         config_defaults["learning_rate"] = args.learning_rate
 
-    wandb.init(config=config_defaults)
+    wandb.init(config=config_defaults,project="MLOps Transformers Sweep")
 
     config = wandb.config
     return config
