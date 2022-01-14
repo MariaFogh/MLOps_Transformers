@@ -1,5 +1,5 @@
 import argparse
-from os.path import exists,environ
+from os.path import exists, environ
 
 import torch
 import wandb
@@ -7,6 +7,7 @@ from datasets import load_metric
 from torch.utils.data import DataLoader
 from tqdm.auto import tqdm
 from transformers import AdamW, AutoModelForSequenceClassification, get_scheduler
+
 
 def wandb_arg_parser():
     environ["WANDB_API_KEY"] = "719c09fb68fba7368ba93fd0b304d7e1a2fb1a4a"
@@ -21,7 +22,7 @@ def wandb_arg_parser():
     if hasattr(args, "learning_rate"):
         config_defaults["learning_rate"] = args.learning_rate
 
-    wandb.init(config=config_defaults,project="MLOps Transformers Sweep")
+    wandb.init(config=config_defaults, project="MLOps Transformers Sweep")
 
     config = wandb.config
     return config
