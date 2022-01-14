@@ -4,6 +4,6 @@ python src/data/make_dataset.py
 #NUM=5
 #SWEEPID="axhg8mqz"
 #wandb agent --count $NUM $SWEEPID
-python src/data/train_model.py
+python src/models/train_model.py
 # Validation of model
-python src/data/predict_model.py
+python src/models/predict_model.py
