@@ -1,0 +1,6 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/mlops-transformers/dockers', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/mlops-transformers/dockers']
+timeout: 1200s
