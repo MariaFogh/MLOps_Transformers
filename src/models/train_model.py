@@ -4,15 +4,15 @@ from os import environ
 
 import torch
 import wandb
-from datasets import load_metric
+#from datasets import load_metric
 from torch.utils.data import DataLoader
-from tqdm.auto import tqdm
+#from tqdm.auto import tqdm
 from transformers import AdamW, AutoModelForSequenceClassification, get_scheduler
 
 
 def wandb_arg_parser():
     environ["WANDB_API_KEY"] = "719c09fb68fba7368ba93fd0b304d7e1a2fb1a4a"
-    environ["WANDB_MODE"] = "offline"
+    environ["WANDB_MODE"] = "online"
 
     parser = argparse.ArgumentParser()
     args, leftovers = parser.parse_known_args()
@@ -36,7 +36,10 @@ def train_model():
     small_train_dataset = torch.load(input_filepath + "/train_small.pt")
     print("The trining set concists of")
     print(small_train_dataset)
-    train_dataloader = DataLoader(small_train_dataset, shuffle=True, batch_size=8)
+
+    batch_size = 8
+    num_batches = 1000 / batch_size
+    train_dataloader = DataLoader(small_train_dataset, shuffle=True, batch_size=batch_size)
 
     model = None
     if not exists(model_from_path):
@@ -74,16 +77,17 @@ def train_model():
 
     # Initializing WandB
     wandb.watch(model, log_freq=100)
-    progress_bar = tqdm(range(num_training_steps))
+    #progress_bar = tqdm(range(num_training_steps))
 
     # Training
     print(f"Training {num_epochs} epochs")
     model.train()
     for epoch in range(num_epochs):
-        metric = load_metric("accuracy")
+        #metric = load_metric("accuracy")
+        accuracy = 0.0
         train_loss = 0.0
-        num_batches = 0
-        for batch in train_dataloader:
+        for ite,batch in enumerate(train_dataloader):
+            print(f"\tRunning batch {ite+1} of {num_batches}", end='\r')
             batch = {k: v.to(device) for k, v in batch.items()}
             outputs = model(**batch)
             loss = outputs.loss
@@ -91,19 +95,20 @@ def train_model():
 
             # Updating metrics
             predictions = torch.argmax(outputs.logits, dim=-1)
-            metric.add_batch(predictions=predictions, references=batch["labels"])
+            #metric.add_batch(predictions=predictions, references=batch["labels"])
+            accuracy += sum(predictions == batch["labels"])/predictions.numel()
             train_loss += loss.item()
-            num_batches += 1
 
             # Continuing to next batch
             optimizer.step()
             lr_scheduler.step()
             optimizer.zero_grad()
-            progress_bar.update(1)
-        accuracy = metric.compute()
-        print(f"\tFinished epoch {epoch+1} of {num_epochs}:")
-        print(f"Accuracy:{accuracy}")
-        print(f"Loss:{train_loss}")
+            #progress_bar.update(1)
+        #accuracy = metric.compute()
+        accuracy = 100*(accuracy/num_batches)
+        print(f"\n\tFinished epoch {epoch+1} of {num_epochs}:")
+        print(f"\t\tAccuracy:{accuracy} %")
+        print(f"\t\tLoss:{train_loss}")
         wandb.log(
             {"training_loss": train_loss / num_batches, "training_accuracy": accuracy}
         )
