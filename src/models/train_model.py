@@ -1,6 +1,4 @@
-import argparse
 from os.path import exists
-from os import environ
 
 import torch
 import wandb
@@ -8,36 +6,22 @@ import wandb
 from torch.utils.data import DataLoader
 #from tqdm.auto import tqdm
 from transformers import AdamW, AutoModelForSequenceClassification, get_scheduler
-
-
-def wandb_arg_parser():
-    environ["WANDB_API_KEY"] = "719c09fb68fba7368ba93fd0b304d7e1a2fb1a4a"
-    environ["WANDB_MODE"] = "online"
-
-    parser = argparse.ArgumentParser()
-    args, leftovers = parser.parse_known_args()
-    config_defaults = {"learning_rate": 5e-5, "epochs": 2}
-
-    if hasattr(args, "epochs"):
-        config_defaults["epochs"] = args.epochs
-    if hasattr(args, "learning_rate"):
-        config_defaults["learning_rate"] = args.learning_rate
-
-    wandb.init(config=config_defaults, project="MLOps Transformers Sweep")
-
-    config = wandb.config
-    return config
-
+from wandb_helpers import wandb_arg_parser
 
 def train_model():
     input_filepath = "./data/processed"
     model_from_path = "./models/pretrained_bert"
     model_to_path = "./models/finetuned_bert"
     small_train_dataset = torch.load(input_filepath + "/train_small.pt")
-    print("The trining set concists of")
+    print("The training set concists of")
     print(small_train_dataset)
 
-    batch_size = 8
+    # Getting arguments from WandB
+    config = wandb_arg_parser()
+    learning_rate = config.learning_rate
+    num_epochs = config.epochs
+    batch_size = config.batch_size
+
     num_batches = 1000 / batch_size
     train_dataloader = DataLoader(small_train_dataset, shuffle=True, batch_size=batch_size)
 
@@ -54,11 +38,6 @@ def train_model():
     else:
         print(f"Using pretrained BERT model from path {model_from_path}")
         model = AutoModelForSequenceClassification.from_pretrained(model_from_path)
-
-    # Getting arguments from WandB
-    config = wandb_arg_parser()
-    learning_rate = config.learning_rate
-    num_epochs = config.epochs
 
     # Optimizer and Scheduler
     optimizer = AdamW(model.parameters(), lr=learning_rate)
@@ -104,19 +83,19 @@ def train_model():
             lr_scheduler.step()
             optimizer.zero_grad()
             #progress_bar.update(1)
+            
         #accuracy = metric.compute()
         accuracy = 100*(accuracy/num_batches)
         print(f"\n\tFinished epoch {epoch+1} of {num_epochs}:")
         print(f"\t\tAccuracy:{accuracy} %")
-        print(f"\t\tLoss:{train_loss}")
+        print(f"\t\tLoss:{train_loss}\n")
         wandb.log(
             {"training_loss": train_loss / num_batches, "training_accuracy": accuracy}
         )
     model.save_pretrained(model_to_path)
     print(f"Saved trained BERT model to path {model_to_path}")
-
-    model.save_pretrained("./models/trained_bert")
-
+    wandb.log_artifact(model_to_path, name='finetuned_bert', type='model')
+    print(f"Uploaded trained BERT model to path WandB")
 
 if __name__ == "__main__":
     train_model()

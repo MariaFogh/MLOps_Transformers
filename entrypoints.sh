@@ -1,3 +1,5 @@
+#!/bin/bash
+echo "Running entrypoints.sh"
 # Making data
 python src/data/make_dataset.py
 # Parameter estimation

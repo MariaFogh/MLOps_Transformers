@@ -7,7 +7,7 @@ from transformers import AutoTokenizer
 import os
 
 
-def main():
+def save_datasets():
     """Runs data processing scripts to turn raw data from (../raw) into
     cleaned data ready to be analyzed (saved in ../processed).
     """
@@ -46,4 +46,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    save_datasets()
