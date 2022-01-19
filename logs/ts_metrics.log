@@ -663,3 +663,10 @@
 2022-01-19T12:28:30,047 - MemoryAvailable.Megabytes:6808.703125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591710
 2022-01-19T12:28:30,047 - MemoryUsed.Megabytes:8926.13671875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591710
 2022-01-19T12:28:30,047 - MemoryUtilization.Percent:58.4|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591710
+2022-01-19T12:29:30,038 - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591770
+2022-01-19T12:29:30,038 - DiskAvailable.Gigabytes:159.55137634277344|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591770
+2022-01-19T12:29:30,038 - DiskUsage.Gigabytes:306.0756149291992|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591770
+2022-01-19T12:29:30,038 - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591770
+2022-01-19T12:29:30,039 - MemoryAvailable.Megabytes:6424.3828125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591770
+2022-01-19T12:29:30,039 - MemoryUsed.Megabytes:9306.52734375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591770
+2022-01-19T12:29:30,039 - MemoryUtilization.Percent:60.8|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591770

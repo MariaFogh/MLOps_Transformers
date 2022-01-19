@@ -1,6 +1,10 @@
-from src.data.make_dataset import save_datasets
-from src.models.train_model import train_model
-from src.models.predict_model import test_model
+import sys
+sys.path.append('./src/models/')
+sys.path.append('./src/data/')
+print(sys.path)
+from make_dataset import save_datasets
+from train_model import train_model
+from predict_model import test_model
 
 if __name__ == "__main__":
     print("Running entrypoints.py")

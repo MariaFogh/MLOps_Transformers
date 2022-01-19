@@ -92,11 +92,12 @@ def train_model():
         wandb.log(
             {"training_loss": train_loss / num_batches, "training_accuracy": accuracy}
         )
+        wandb.log_artifact(model_to_path, name=f"finetuned_bert_{epoch+1}", type='model')
+        print(f"Uploaded trained BERT model to path WandB")
     model.to(torch.device("cpu"))
     model.save_pretrained(model_to_path)
     print(f"Saved trained BERT model to path {model_to_path}")
-    wandb.log_artifact(model_to_path, name='finetuned_bert', type='model')
-    print(f"Uploaded trained BERT model to path WandB")
+
 
 if __name__ == "__main__":
     train_model()
