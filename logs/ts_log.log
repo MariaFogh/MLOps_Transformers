@@ -1,0 +1,743 @@
+2022-01-19T10:47:07,869 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-01-19T10:47:07,869 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-01-19T10:47:07,926 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-01-19T10:47:07,926 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-01-19T10:47:08,286 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.5.2
+TS Home: /usr/local/anaconda3/lib/python3.7/site-packages
+Current directory: /Users/maria/MLOps_Transformers
+Temp directory: /var/folders/bx/1rzxld1d3pdfks1bqj8dn3jw0000gn/T/
+Number of GPUs: 0
+Number of CPUs: 8
+Max heap size: 4096 M
+Python executable: /usr/local/anaconda3/bin/python3
+Config file: N/A
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: /Users/maria/MLOps_Transformers/model_store
+Initial Models: N/A
+Log dir: /Users/maria/MLOps_Transformers/logs
+Metrics dir: /Users/maria/MLOps_Transformers/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 8
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: /Users/maria/MLOps_Transformers/model_store
+Model config: N/A
+2022-01-19T10:47:08,286 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.5.2
+TS Home: /usr/local/anaconda3/lib/python3.7/site-packages
+Current directory: /Users/maria/MLOps_Transformers
+Temp directory: /var/folders/bx/1rzxld1d3pdfks1bqj8dn3jw0000gn/T/
+Number of GPUs: 0
+Number of CPUs: 8
+Max heap size: 4096 M
+Python executable: /usr/local/anaconda3/bin/python3
+Config file: N/A
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: /Users/maria/MLOps_Transformers/model_store
+Initial Models: N/A
+Log dir: /Users/maria/MLOps_Transformers/logs
+Metrics dir: /Users/maria/MLOps_Transformers/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 8
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: /Users/maria/MLOps_Transformers/model_store
+Model config: N/A
+2022-01-19T10:47:08,312 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: KQueueServerSocketChannel.
+2022-01-19T10:47:08,312 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: KQueueServerSocketChannel.
+2022-01-19T10:47:08,425 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-01-19T10:47:08,425 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-01-19T10:47:08,425 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: KQueueServerSocketChannel.
+2022-01-19T10:47:08,425 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: KQueueServerSocketChannel.
+2022-01-19T10:47:08,427 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-01-19T10:47:08,427 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-01-19T10:47:08,427 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: KQueueServerSocketChannel.
+2022-01-19T10:47:08,427 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: KQueueServerSocketChannel.
+2022-01-19T10:47:08,428 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-01-19T10:47:08,428 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-01-19T10:47:08,839 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585628
+2022-01-19T10:47:08,858 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.64240646362305|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585628
+2022-01-19T10:47:08,859 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:305.9845848083496|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585628
+2022-01-19T10:47:08,860 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585628
+2022-01-19T10:47:08,860 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6405.2734375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585628
+2022-01-19T10:47:08,861 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8732.8203125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585628
+2022-01-19T10:47:08,861 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:60.9|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585628
+2022-01-19T10:48:08,825 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585688
+2022-01-19T10:48:08,825 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.64123153686523|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585688
+2022-01-19T10:48:08,826 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:305.9857597351074|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585688
+2022-01-19T10:48:08,826 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585688
+2022-01-19T10:48:08,826 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6400.15625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585688
+2022-01-19T10:48:08,826 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8737.56640625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585688
+2022-01-19T10:48:08,827 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:60.9|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585688
+2022-01-19T10:49:08,833 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585748
+2022-01-19T10:49:08,835 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.64210891723633|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585748
+2022-01-19T10:49:08,835 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:305.9848823547363|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585748
+2022-01-19T10:49:08,835 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585748
+2022-01-19T10:49:08,836 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6449.6953125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585748
+2022-01-19T10:49:08,836 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8687.7578125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585748
+2022-01-19T10:49:08,836 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:60.6|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585748
+2022-01-19T10:50:08,838 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585808
+2022-01-19T10:50:08,855 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.64624404907227|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585808
+2022-01-19T10:50:08,855 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:305.9807472229004|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585808
+2022-01-19T10:50:08,855 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585808
+2022-01-19T10:50:08,856 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6442.140625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585808
+2022-01-19T10:50:08,857 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8694.94921875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585808
+2022-01-19T10:50:08,858 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:60.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585808
+2022-01-19T10:51:08,842 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585868
+2022-01-19T10:51:08,843 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.64491271972656|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585868
+2022-01-19T10:51:08,844 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:305.9820785522461|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585868
+2022-01-19T10:51:08,844 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585868
+2022-01-19T10:51:08,845 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6477.33203125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585868
+2022-01-19T10:51:08,845 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8660.01953125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585868
+2022-01-19T10:51:08,845 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:60.5|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585868
+2022-01-19T10:52:08,835 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585928
+2022-01-19T10:52:08,835 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.6470069885254|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585928
+2022-01-19T10:52:08,835 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:305.97998428344727|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585928
+2022-01-19T10:52:08,835 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585928
+2022-01-19T10:52:08,836 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6318.16015625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585928
+2022-01-19T10:52:08,836 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8818.2421875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585928
+2022-01-19T10:52:08,836 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:61.4|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585928
+2022-01-19T10:53:08,966 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585988
+2022-01-19T10:53:08,967 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.63098526000977|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585988
+2022-01-19T10:53:08,968 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:305.9960060119629|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585988
+2022-01-19T10:53:08,968 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585988
+2022-01-19T10:53:08,968 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6145.7421875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585988
+2022-01-19T10:53:08,969 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:9088.3359375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585988
+2022-01-19T10:53:08,969 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:62.5|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642585988
+2022-01-19T10:54:08,831 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586048
+2022-01-19T10:54:08,832 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.6261749267578|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586048
+2022-01-19T10:54:08,832 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.00081634521484|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586048
+2022-01-19T10:54:08,832 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586048
+2022-01-19T10:54:08,833 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6430.19921875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586048
+2022-01-19T10:54:08,833 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8804.59765625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586048
+2022-01-19T10:54:08,833 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:60.8|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586048
+2022-01-19T10:55:08,825 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586108
+2022-01-19T10:55:08,825 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.62593841552734|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586108
+2022-01-19T10:55:08,825 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.0010528564453|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586108
+2022-01-19T10:55:08,825 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586108
+2022-01-19T10:55:08,826 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6392.89453125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586108
+2022-01-19T10:55:08,826 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8844.0703125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586108
+2022-01-19T10:55:08,826 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:61.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586108
+2022-01-19T10:56:08,813 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586168
+2022-01-19T10:56:08,833 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.6273078918457|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586168
+2022-01-19T10:56:08,835 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:305.99968338012695|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586168
+2022-01-19T10:56:08,836 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586168
+2022-01-19T10:56:08,836 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6333.03515625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586168
+2022-01-19T10:56:08,837 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8903.25390625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586168
+2022-01-19T10:56:08,837 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:61.3|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586168
+2022-01-19T10:57:08,824 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586228
+2022-01-19T10:57:08,825 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.62575149536133|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586228
+2022-01-19T10:57:08,825 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.0012397766113|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586228
+2022-01-19T10:57:08,825 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586228
+2022-01-19T10:57:08,825 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6280.61328125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586228
+2022-01-19T10:57:08,825 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8955.39453125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586228
+2022-01-19T10:57:08,826 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:61.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586228
+2022-01-19T10:58:08,826 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586288
+2022-01-19T10:58:08,826 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.62005233764648|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586288
+2022-01-19T10:58:08,827 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.0069389343262|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586288
+2022-01-19T10:58:08,827 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586288
+2022-01-19T10:58:08,827 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6195.54296875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586288
+2022-01-19T10:58:08,827 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:9039.00390625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586288
+2022-01-19T10:58:08,827 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:62.2|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586288
+2022-01-19T10:59:08,835 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586348
+2022-01-19T10:59:08,836 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.62176513671875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586348
+2022-01-19T10:59:08,836 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.0052261352539|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586348
+2022-01-19T10:59:08,836 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586348
+2022-01-19T10:59:08,837 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6511.8046875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586348
+2022-01-19T10:59:08,837 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8747.71484375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586348
+2022-01-19T10:59:08,837 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:60.3|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586348
+2022-01-19T11:00:08,815 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:50.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586408
+2022-01-19T11:00:08,815 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.6235809326172|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586408
+2022-01-19T11:00:08,815 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.00341033935547|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586408
+2022-01-19T11:00:08,815 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586408
+2022-01-19T11:00:08,816 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6564.05078125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586408
+2022-01-19T11:00:08,816 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8693.59375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586408
+2022-01-19T11:00:08,816 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:59.9|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586408
+2022-01-19T11:01:08,817 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586468
+2022-01-19T11:01:08,817 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.625244140625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586468
+2022-01-19T11:01:08,817 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.00174713134766|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586468
+2022-01-19T11:01:08,817 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586468
+2022-01-19T11:01:08,818 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6476.03125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586468
+2022-01-19T11:01:08,818 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8781.875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586468
+2022-01-19T11:01:08,818 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:60.5|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586468
+2022-01-19T11:02:08,848 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586528
+2022-01-19T11:02:08,852 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.62475204467773|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586528
+2022-01-19T11:02:08,853 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.0022392272949|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586528
+2022-01-19T11:02:08,855 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586528
+2022-01-19T11:02:08,855 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6330.08984375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586528
+2022-01-19T11:02:08,855 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8902.234375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586528
+2022-01-19T11:02:08,855 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:61.4|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586528
+2022-01-19T11:03:08,833 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586588
+2022-01-19T11:03:08,835 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.6226577758789|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586588
+2022-01-19T11:03:08,835 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.00433349609375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586588
+2022-01-19T11:03:08,836 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586588
+2022-01-19T11:03:08,836 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6350.3125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586588
+2022-01-19T11:03:08,836 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8882.16015625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586588
+2022-01-19T11:03:08,836 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:61.2|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586588
+2022-01-19T11:04:08,829 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:100.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586648
+2022-01-19T11:04:08,830 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.62231826782227|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586648
+2022-01-19T11:04:08,831 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.0046730041504|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586648
+2022-01-19T11:04:08,831 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586648
+2022-01-19T11:04:08,831 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6213.36328125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586648
+2022-01-19T11:04:08,831 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:9018.46484375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586648
+2022-01-19T11:04:08,831 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:62.1|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586648
+2022-01-19T11:05:08,894 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586708
+2022-01-19T11:05:08,917 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.6238670349121|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586708
+2022-01-19T11:05:08,918 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.00312423706055|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586708
+2022-01-19T11:05:08,920 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586708
+2022-01-19T11:05:08,920 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6373.6796875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586708
+2022-01-19T11:05:08,921 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8858.875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586708
+2022-01-19T11:05:08,921 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:61.1|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586708
+2022-01-19T11:06:08,799 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586768
+2022-01-19T11:06:08,799 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.62273788452148|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586768
+2022-01-19T11:06:08,799 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.0042533874512|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586768
+2022-01-19T11:06:08,799 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586768
+2022-01-19T11:06:08,799 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6121.671875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586768
+2022-01-19T11:06:08,799 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:9110.234375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586768
+2022-01-19T11:06:08,800 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:62.6|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586768
+2022-01-19T11:07:08,820 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586828
+2022-01-19T11:07:08,820 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.6283416748047|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586828
+2022-01-19T11:07:08,820 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:305.99864959716797|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586828
+2022-01-19T11:07:08,820 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586828
+2022-01-19T11:07:08,820 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6197.484375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586828
+2022-01-19T11:07:08,820 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:9034.7109375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586828
+2022-01-19T11:07:08,821 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:62.2|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586828
+2022-01-19T11:08:08,832 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586888
+2022-01-19T11:08:08,833 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.62385177612305|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586888
+2022-01-19T11:08:08,834 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.0031394958496|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586888
+2022-01-19T11:08:08,834 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586888
+2022-01-19T11:08:08,835 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6242.6171875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586888
+2022-01-19T11:08:08,835 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8989.34765625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586888
+2022-01-19T11:08:08,835 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:61.9|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586888
+2022-01-19T11:09:08,817 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586948
+2022-01-19T11:09:08,817 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.6237030029297|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586948
+2022-01-19T11:09:08,817 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.00328826904297|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586948
+2022-01-19T11:09:08,817 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586948
+2022-01-19T11:09:08,817 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6223.50390625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586948
+2022-01-19T11:09:08,818 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:9008.83203125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586948
+2022-01-19T11:09:08,818 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:62.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642586948
+2022-01-19T11:10:08,822 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587008
+2022-01-19T11:10:08,823 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.62664794921875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587008
+2022-01-19T11:10:08,823 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.0003433227539|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587008
+2022-01-19T11:10:08,823 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587008
+2022-01-19T11:10:08,823 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6270.12109375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587008
+2022-01-19T11:10:08,824 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8961.796875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587008
+2022-01-19T11:10:08,824 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:61.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587008
+2022-01-19T11:11:08,829 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587068
+2022-01-19T11:11:08,830 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.62406158447266|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587068
+2022-01-19T11:11:08,830 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.0029296875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587068
+2022-01-19T11:11:08,830 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587068
+2022-01-19T11:11:08,830 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6403.015625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587068
+2022-01-19T11:11:08,830 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8829.4296875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587068
+2022-01-19T11:11:08,830 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:60.9|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587068
+2022-01-19T11:12:08,840 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587128
+2022-01-19T11:12:08,840 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.62486267089844|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587128
+2022-01-19T11:12:08,840 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.0021286010742|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587128
+2022-01-19T11:12:08,840 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587128
+2022-01-19T11:12:08,840 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6296.390625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587128
+2022-01-19T11:12:08,840 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8935.23828125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587128
+2022-01-19T11:12:08,841 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:61.6|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587128
+2022-01-19T11:13:08,782 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587188
+2022-01-19T11:13:08,782 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.62826919555664|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587188
+2022-01-19T11:13:08,782 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:305.998722076416|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587188
+2022-01-19T11:13:08,782 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587188
+2022-01-19T11:13:08,782 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6359.28125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587188
+2022-01-19T11:13:08,783 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8872.34765625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587188
+2022-01-19T11:13:08,783 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:61.2|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587188
+2022-01-19T11:14:08,774 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587248
+2022-01-19T11:14:08,774 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.62620544433594|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587248
+2022-01-19T11:14:08,774 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.0007858276367|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587248
+2022-01-19T11:14:08,774 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587248
+2022-01-19T11:14:08,774 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6339.23046875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587248
+2022-01-19T11:14:08,774 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8892.6015625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587248
+2022-01-19T11:14:08,775 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:61.3|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587248
+2022-01-19T11:15:08,784 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587308
+2022-01-19T11:15:08,785 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.62714385986328|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587308
+2022-01-19T11:15:08,785 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:305.9998474121094|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587308
+2022-01-19T11:15:08,785 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587308
+2022-01-19T11:15:08,786 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6480.27734375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587308
+2022-01-19T11:15:08,786 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8751.08203125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587308
+2022-01-19T11:15:08,786 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:60.4|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587308
+2022-01-19T11:16:08,787 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587368
+2022-01-19T11:16:08,787 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.62504196166992|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587368
+2022-01-19T11:16:08,788 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.00194931030273|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587368
+2022-01-19T11:16:08,788 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587368
+2022-01-19T11:16:08,788 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6269.921875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587368
+2022-01-19T11:16:08,788 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8962.03125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587368
+2022-01-19T11:16:08,789 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:61.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587368
+2022-01-19T11:17:08,778 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587428
+2022-01-19T11:17:08,779 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.6217155456543|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587428
+2022-01-19T11:17:08,779 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.00527572631836|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587428
+2022-01-19T11:17:08,779 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587428
+2022-01-19T11:17:08,779 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6481.484375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587428
+2022-01-19T11:17:08,779 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8727.0859375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587428
+2022-01-19T11:17:08,780 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:60.4|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587428
+2022-01-19T11:18:08,785 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587488
+2022-01-19T11:18:08,786 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.62450408935547|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587488
+2022-01-19T11:18:08,786 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.0024871826172|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587488
+2022-01-19T11:18:08,787 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587488
+2022-01-19T11:18:08,787 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6659.3125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587488
+2022-01-19T11:18:08,787 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8538.52734375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587488
+2022-01-19T11:18:08,787 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:59.4|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587488
+2022-01-19T11:19:08,772 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587548
+2022-01-19T11:19:08,772 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.6238784790039|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587548
+2022-01-19T11:19:08,772 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.00311279296875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587548
+2022-01-19T11:19:08,772 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587548
+2022-01-19T11:19:08,772 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6637.1484375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587548
+2022-01-19T11:19:08,772 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8560.26171875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587548
+2022-01-19T11:19:08,773 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:59.5|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587548
+2022-01-19T11:20:08,847 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587608
+2022-01-19T11:20:08,848 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.62042617797852|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587608
+2022-01-19T11:20:08,848 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.00656509399414|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587608
+2022-01-19T11:20:08,848 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587608
+2022-01-19T11:20:08,848 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6718.30078125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587608
+2022-01-19T11:20:08,848 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8474.80078125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587608
+2022-01-19T11:20:08,848 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:59.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587608
+2022-01-19T11:21:08,775 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587668
+2022-01-19T11:21:08,776 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.62228393554688|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587668
+2022-01-19T11:21:08,776 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.0047073364258|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587668
+2022-01-19T11:21:08,776 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587668
+2022-01-19T11:21:08,776 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6633.9375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587668
+2022-01-19T11:21:08,776 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8559.51171875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587668
+2022-01-19T11:21:08,776 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:59.5|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587668
+2022-01-19T11:22:08,770 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587728
+2022-01-19T11:22:08,770 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.62027740478516|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587728
+2022-01-19T11:22:08,771 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.0067138671875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587728
+2022-01-19T11:22:08,771 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587728
+2022-01-19T11:22:08,771 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6687.94921875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587728
+2022-01-19T11:22:08,771 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8505.3125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587728
+2022-01-19T11:22:08,771 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:59.2|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587728
+2022-01-19T11:23:08,787 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587788
+2022-01-19T11:23:08,803 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.62149810791016|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587788
+2022-01-19T11:23:08,803 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.0054931640625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587788
+2022-01-19T11:23:08,804 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587788
+2022-01-19T11:23:08,806 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6622.51171875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587788
+2022-01-19T11:23:08,806 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8571.4609375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587788
+2022-01-19T11:23:08,806 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:59.6|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587788
+2022-01-19T11:24:08,770 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587848
+2022-01-19T11:24:08,770 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.6200828552246|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587848
+2022-01-19T11:24:08,770 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.00690841674805|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587848
+2022-01-19T11:24:08,770 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587848
+2022-01-19T11:24:08,771 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6616.66015625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587848
+2022-01-19T11:24:08,771 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8576.609375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587848
+2022-01-19T11:24:08,771 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:59.6|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587848
+2022-01-19T11:25:08,784 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587908
+2022-01-19T11:25:08,784 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.6190071105957|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587908
+2022-01-19T11:25:08,784 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.00798416137695|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587908
+2022-01-19T11:25:08,785 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587908
+2022-01-19T11:25:08,785 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6576.3359375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587908
+2022-01-19T11:25:08,785 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8617.13671875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587908
+2022-01-19T11:25:08,785 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:59.9|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587908
+2022-01-19T11:26:08,764 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587968
+2022-01-19T11:26:08,764 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.6196060180664|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587968
+2022-01-19T11:26:08,764 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.00738525390625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587968
+2022-01-19T11:26:08,764 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587968
+2022-01-19T11:26:08,764 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6550.72265625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587968
+2022-01-19T11:26:08,764 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8645.5859375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587968
+2022-01-19T11:26:08,764 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:60.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642587968
+2022-01-19T11:27:08,770 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588028
+2022-01-19T11:27:08,771 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.61669540405273|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588028
+2022-01-19T11:27:08,771 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.0102958679199|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588028
+2022-01-19T11:27:08,771 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588028
+2022-01-19T11:27:08,771 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6613.4296875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588028
+2022-01-19T11:27:08,771 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8584.8515625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588028
+2022-01-19T11:27:08,771 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:59.6|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588028
+2022-01-19T11:28:08,773 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588088
+2022-01-19T11:28:08,773 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.61807250976562|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588088
+2022-01-19T11:28:08,773 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.00891876220703|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588088
+2022-01-19T11:28:08,773 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588088
+2022-01-19T11:28:08,773 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6409.23828125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588088
+2022-01-19T11:28:08,773 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8788.3984375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588088
+2022-01-19T11:28:08,773 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:60.9|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588088
+2022-01-19T11:29:08,790 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588148
+2022-01-19T11:29:08,810 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.6214370727539|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588148
+2022-01-19T11:29:08,813 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.00555419921875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588148
+2022-01-19T11:29:08,813 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588148
+2022-01-19T11:29:08,815 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6671.60546875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588148
+2022-01-19T11:29:08,815 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8525.40234375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588148
+2022-01-19T11:29:08,815 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:59.3|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588148
+2022-01-19T11:30:08,768 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588208
+2022-01-19T11:30:08,769 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.62126541137695|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588208
+2022-01-19T11:30:08,769 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.0057258605957|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588208
+2022-01-19T11:30:08,769 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588208
+2022-01-19T11:30:08,769 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6669.76953125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588208
+2022-01-19T11:30:08,769 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8528.734375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588208
+2022-01-19T11:30:08,769 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:59.3|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588208
+2022-01-19T11:31:08,777 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588268
+2022-01-19T11:31:08,777 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.62235260009766|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588268
+2022-01-19T11:31:08,777 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.004638671875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588268
+2022-01-19T11:31:08,777 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588268
+2022-01-19T11:31:08,777 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6677.546875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588268
+2022-01-19T11:31:08,778 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8520.546875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588268
+2022-01-19T11:31:08,778 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:59.2|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588268
+2022-01-19T11:32:08,775 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588328
+2022-01-19T11:32:08,775 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.62105560302734|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588328
+2022-01-19T11:32:08,775 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.0059356689453|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588328
+2022-01-19T11:32:08,776 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588328
+2022-01-19T11:32:08,776 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6671.625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588328
+2022-01-19T11:32:08,776 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8526.05859375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588328
+2022-01-19T11:32:08,776 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:59.3|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588328
+2022-01-19T11:33:08,768 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588388
+2022-01-19T11:33:08,768 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.62213897705078|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588388
+2022-01-19T11:33:08,768 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.0048522949219|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588388
+2022-01-19T11:33:08,768 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588388
+2022-01-19T11:33:08,768 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6648.1796875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588388
+2022-01-19T11:33:08,768 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8549.96484375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588388
+2022-01-19T11:33:08,768 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:59.4|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588388
+2022-01-19T11:34:08,767 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588448
+2022-01-19T11:34:08,767 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.62013626098633|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588448
+2022-01-19T11:34:08,767 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.0068550109863|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588448
+2022-01-19T11:34:08,767 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588448
+2022-01-19T11:34:08,767 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6628.42578125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588448
+2022-01-19T11:34:08,768 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8569.53125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588448
+2022-01-19T11:34:08,768 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:59.5|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588448
+2022-01-19T11:35:08,763 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588508
+2022-01-19T11:35:08,763 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.62471389770508|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588508
+2022-01-19T11:35:08,763 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.0022773742676|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588508
+2022-01-19T11:35:08,764 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588508
+2022-01-19T11:35:08,764 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6534.48828125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588508
+2022-01-19T11:35:08,764 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8664.73828125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588508
+2022-01-19T11:35:08,764 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:60.1|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588508
+2022-01-19T11:36:08,766 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588568
+2022-01-19T11:36:08,766 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.62106323242188|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588568
+2022-01-19T11:36:08,766 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.0059280395508|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588568
+2022-01-19T11:36:08,767 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588568
+2022-01-19T11:36:08,767 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6492.7734375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588568
+2022-01-19T11:36:08,767 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8704.953125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588568
+2022-01-19T11:36:08,767 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:60.4|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588568
+2022-01-19T11:37:08,759 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588628
+2022-01-19T11:37:08,759 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.62658309936523|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588628
+2022-01-19T11:37:08,760 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.0004081726074|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588628
+2022-01-19T11:37:08,760 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588628
+2022-01-19T11:37:08,760 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6222.13671875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588628
+2022-01-19T11:37:08,760 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8977.03125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588628
+2022-01-19T11:37:08,760 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:62.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588628
+2022-01-19T11:38:08,761 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588688
+2022-01-19T11:38:08,763 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.60741424560547|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588688
+2022-01-19T11:38:08,763 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.0195770263672|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588688
+2022-01-19T11:38:08,763 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588688
+2022-01-19T11:38:08,763 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6218.80859375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588688
+2022-01-19T11:38:08,763 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8980.90234375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588688
+2022-01-19T11:38:08,763 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:62.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588688
+2022-01-19T11:39:08,762 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588748
+2022-01-19T11:39:08,762 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.60337448120117|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588748
+2022-01-19T11:39:08,762 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.0236167907715|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588748
+2022-01-19T11:39:08,762 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588748
+2022-01-19T11:39:08,762 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6254.90234375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588748
+2022-01-19T11:39:08,762 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8944.62890625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588748
+2022-01-19T11:39:08,762 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:61.8|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588748
+2022-01-19T11:40:08,759 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588808
+2022-01-19T11:40:08,759 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.6050262451172|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588808
+2022-01-19T11:40:08,759 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.02196502685547|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588808
+2022-01-19T11:40:08,759 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588808
+2022-01-19T11:40:08,760 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6325.359375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588808
+2022-01-19T11:40:08,760 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8873.640625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588808
+2022-01-19T11:40:08,760 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:61.4|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588808
+2022-01-19T11:41:08,765 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588868
+2022-01-19T11:41:08,766 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.60297393798828|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588868
+2022-01-19T11:41:08,766 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.0240173339844|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588868
+2022-01-19T11:41:08,766 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588868
+2022-01-19T11:41:08,766 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6320.29296875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588868
+2022-01-19T11:41:08,766 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8878.55078125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588868
+2022-01-19T11:41:08,766 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:61.4|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588868
+2022-01-19T11:42:08,755 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588928
+2022-01-19T11:42:08,755 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.60089111328125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588928
+2022-01-19T11:42:08,756 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.0261001586914|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588928
+2022-01-19T11:42:08,756 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588928
+2022-01-19T11:42:08,756 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6322.4921875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588928
+2022-01-19T11:42:08,756 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8876.60546875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588928
+2022-01-19T11:42:08,756 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:61.4|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588928
+2022-01-19T11:43:08,806 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588988
+2022-01-19T11:43:08,807 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.60107421875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588988
+2022-01-19T11:43:08,807 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.02591705322266|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588988
+2022-01-19T11:43:08,807 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588988
+2022-01-19T11:43:08,807 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6249.37890625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588988
+2022-01-19T11:43:08,808 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8925.90234375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588988
+2022-01-19T11:43:08,808 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:61.9|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642588988
+2022-01-19T11:44:09,127 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589049
+2022-01-19T11:44:09,128 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.5939178466797|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589049
+2022-01-19T11:44:09,129 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.03307342529297|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589049
+2022-01-19T11:44:09,129 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589049
+2022-01-19T11:44:09,130 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6191.37890625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589049
+2022-01-19T11:44:09,130 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8946.0625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589049
+2022-01-19T11:44:09,130 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:62.2|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589049
+2022-01-19T11:45:09,019 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589109
+2022-01-19T11:45:09,020 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.61040496826172|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589109
+2022-01-19T11:45:09,020 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.01658630371094|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589109
+2022-01-19T11:45:09,020 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589109
+2022-01-19T11:45:09,020 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5885.9375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589109
+2022-01-19T11:45:09,020 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8930.3203125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589109
+2022-01-19T11:45:09,020 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:64.1|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589109
+2022-01-19T11:46:08,742 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589168
+2022-01-19T11:46:08,742 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.60553359985352|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589168
+2022-01-19T11:46:08,742 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.02145767211914|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589168
+2022-01-19T11:46:08,742 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589168
+2022-01-19T11:46:08,742 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:7024.36328125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589168
+2022-01-19T11:46:08,742 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8576.21484375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589168
+2022-01-19T11:46:08,743 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:57.1|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589168
+2022-01-19T11:47:08,752 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589228
+2022-01-19T11:47:08,753 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.6084861755371|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589228
+2022-01-19T11:47:08,753 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.01850509643555|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589228
+2022-01-19T11:47:08,774 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589228
+2022-01-19T11:47:08,776 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6652.4296875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589228
+2022-01-19T11:47:08,777 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8945.46875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589228
+2022-01-19T11:47:08,778 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:59.4|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589228
+2022-01-19T11:48:08,731 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589288
+2022-01-19T11:48:08,731 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.60780715942383|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589288
+2022-01-19T11:48:08,731 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.0191841125488|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589288
+2022-01-19T11:48:08,732 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589288
+2022-01-19T11:48:08,732 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6498.20703125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589288
+2022-01-19T11:48:08,732 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:9097.6796875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589288
+2022-01-19T11:48:08,732 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:60.3|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589288
+2022-01-19T11:49:08,750 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589348
+2022-01-19T11:49:08,751 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.6020736694336|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589348
+2022-01-19T11:49:08,751 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.02491760253906|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589348
+2022-01-19T11:49:08,751 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589348
+2022-01-19T11:49:08,752 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6820.14453125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589348
+2022-01-19T11:49:08,752 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8728.4921875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589348
+2022-01-19T11:49:08,752 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:58.4|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589348
+2022-01-19T11:50:08,738 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589408
+2022-01-19T11:50:08,753 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.6036491394043|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589408
+2022-01-19T11:50:08,754 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.02334213256836|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589408
+2022-01-19T11:50:08,754 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589408
+2022-01-19T11:50:08,755 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6783.68359375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589408
+2022-01-19T11:50:08,755 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8764.8515625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589408
+2022-01-19T11:50:08,755 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:58.6|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589408
+2022-01-19T11:51:08,749 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589468
+2022-01-19T11:51:08,749 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.60179138183594|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589468
+2022-01-19T11:51:08,749 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.0251998901367|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589468
+2022-01-19T11:51:08,750 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589468
+2022-01-19T11:51:08,750 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6771.2109375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589468
+2022-01-19T11:51:08,750 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8777.3828125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589468
+2022-01-19T11:51:08,750 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:58.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589468
+2022-01-19T11:52:08,728 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589528
+2022-01-19T11:52:08,728 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.6016502380371|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589528
+2022-01-19T11:52:08,728 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.02534103393555|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589528
+2022-01-19T11:52:08,728 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589528
+2022-01-19T11:52:08,728 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6785.03515625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589528
+2022-01-19T11:52:08,728 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8761.1484375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589528
+2022-01-19T11:52:08,728 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:58.6|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589528
+2022-01-19T11:53:08,788 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589588
+2022-01-19T11:53:08,803 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.60149002075195|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589588
+2022-01-19T11:53:08,810 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.0255012512207|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589588
+2022-01-19T11:53:08,811 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589588
+2022-01-19T11:53:08,811 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6723.16015625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589588
+2022-01-19T11:53:08,811 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8810.3671875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589588
+2022-01-19T11:53:08,811 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:59.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589588
+2022-01-19T11:54:08,733 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:100.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589648
+2022-01-19T11:54:08,733 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.60074996948242|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589648
+2022-01-19T11:54:08,733 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.02624130249023|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589648
+2022-01-19T11:54:08,733 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589648
+2022-01-19T11:54:08,734 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6791.94140625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589648
+2022-01-19T11:54:08,734 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8741.44921875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589648
+2022-01-19T11:54:08,734 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:58.5|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589648
+2022-01-19T11:55:08,761 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589708
+2022-01-19T11:55:08,761 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.59982681274414|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589708
+2022-01-19T11:55:08,761 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.0271644592285|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589708
+2022-01-19T11:55:08,761 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589708
+2022-01-19T11:55:08,761 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6223.3515625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589708
+2022-01-19T11:55:08,761 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:9308.515625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589708
+2022-01-19T11:55:08,761 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:62.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589708
+2022-01-19T11:56:08,729 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589768
+2022-01-19T11:56:08,730 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.5984992980957|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589768
+2022-01-19T11:56:08,730 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.02849197387695|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589768
+2022-01-19T11:56:08,730 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589768
+2022-01-19T11:56:08,730 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6327.52734375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589768
+2022-01-19T11:56:08,730 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:9271.296875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589768
+2022-01-19T11:56:08,730 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:61.4|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589768
+2022-01-19T11:57:08,740 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:100.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589828
+2022-01-19T11:57:08,741 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.5923194885254|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589828
+2022-01-19T11:57:08,741 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.03467178344727|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589828
+2022-01-19T11:57:08,742 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589828
+2022-01-19T11:57:08,742 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6046.8046875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589828
+2022-01-19T11:57:08,742 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:9519.734375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589828
+2022-01-19T11:57:08,742 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:63.1|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589828
+2022-01-19T11:58:08,754 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589888
+2022-01-19T11:58:08,755 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.59534072875977|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589888
+2022-01-19T11:58:08,755 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.0316505432129|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589888
+2022-01-19T11:58:08,755 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589888
+2022-01-19T11:58:08,755 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6741.05078125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589888
+2022-01-19T11:58:08,756 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8617.734375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589888
+2022-01-19T11:58:08,756 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:58.9|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589888
+2022-01-19T11:59:08,738 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:50.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589948
+2022-01-19T11:59:08,738 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.58663177490234|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589948
+2022-01-19T11:59:08,738 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.0403594970703|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589948
+2022-01-19T11:59:08,738 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589948
+2022-01-19T11:59:08,739 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6598.51953125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589948
+2022-01-19T11:59:08,739 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8759.5234375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589948
+2022-01-19T11:59:08,739 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:59.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642589948
+2022-01-19T12:00:08,733 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590008
+2022-01-19T12:00:08,733 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.58602142333984|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590008
+2022-01-19T12:00:08,733 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.0409698486328|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590008
+2022-01-19T12:00:08,734 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590008
+2022-01-19T12:00:08,734 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6646.8046875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590008
+2022-01-19T12:00:08,734 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8711.04296875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590008
+2022-01-19T12:00:08,734 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:59.4|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590008
+2022-01-19T12:01:08,741 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590068
+2022-01-19T12:01:08,742 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.58361053466797|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590068
+2022-01-19T12:01:08,742 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.0433807373047|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590068
+2022-01-19T12:01:08,742 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590068
+2022-01-19T12:01:08,742 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6595.66015625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590068
+2022-01-19T12:01:08,742 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8762.125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590068
+2022-01-19T12:01:08,742 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:59.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590068
+2022-01-19T12:02:08,729 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:100.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590128
+2022-01-19T12:02:08,730 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.58384704589844|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590128
+2022-01-19T12:02:08,730 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.0431442260742|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590128
+2022-01-19T12:02:08,730 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590128
+2022-01-19T12:02:08,730 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6481.046875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590128
+2022-01-19T12:02:08,730 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8876.203125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590128
+2022-01-19T12:02:08,730 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:60.4|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590128
+2022-01-19T12:03:08,744 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590188
+2022-01-19T12:03:08,744 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.58556365966797|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590188
+2022-01-19T12:03:08,745 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.0414276123047|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590188
+2022-01-19T12:03:08,745 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590188
+2022-01-19T12:03:08,745 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6348.2734375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590188
+2022-01-19T12:03:08,745 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:9007.3828125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590188
+2022-01-19T12:03:08,745 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:61.3|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590188
+2022-01-19T12:04:08,739 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590248
+2022-01-19T12:04:08,739 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.58319091796875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590248
+2022-01-19T12:04:08,739 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.0438003540039|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590248
+2022-01-19T12:04:08,739 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590248
+2022-01-19T12:04:08,739 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6444.6953125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590248
+2022-01-19T12:04:08,739 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8909.0625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590248
+2022-01-19T12:04:08,739 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:60.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590248
+2022-01-19T12:05:08,745 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590308
+2022-01-19T12:05:08,745 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.58323287963867|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590308
+2022-01-19T12:05:08,745 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.043758392334|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590308
+2022-01-19T12:05:08,745 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590308
+2022-01-19T12:05:08,745 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6531.30078125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590308
+2022-01-19T12:05:08,745 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8821.40234375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590308
+2022-01-19T12:05:08,745 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:60.1|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590308
+2022-01-19T12:06:08,719 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590368
+2022-01-19T12:06:08,721 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.58275604248047|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590368
+2022-01-19T12:06:08,721 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.0442352294922|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590368
+2022-01-19T12:06:08,721 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590368
+2022-01-19T12:06:08,721 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6357.4375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590368
+2022-01-19T12:06:08,721 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8997.9765625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590368
+2022-01-19T12:06:08,721 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:61.2|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590368
+2022-01-19T12:07:08,727 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590428
+2022-01-19T12:07:08,727 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.5818214416504|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590428
+2022-01-19T12:07:08,727 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.04516983032227|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590428
+2022-01-19T12:07:08,727 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590428
+2022-01-19T12:07:08,727 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6433.43359375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590428
+2022-01-19T12:07:08,727 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8922.4375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590428
+2022-01-19T12:07:08,727 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:60.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590428
+2022-01-19T12:08:08,740 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590488
+2022-01-19T12:08:08,741 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.58366012573242|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590488
+2022-01-19T12:08:08,741 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.04333114624023|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590488
+2022-01-19T12:08:08,741 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590488
+2022-01-19T12:08:08,741 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6424.68359375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590488
+2022-01-19T12:08:08,741 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8943.328125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590488
+2022-01-19T12:08:08,741 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:60.8|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590488
+2022-01-19T12:09:08,766 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590548
+2022-01-19T12:09:08,767 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.58232498168945|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590548
+2022-01-19T12:09:08,768 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.0446662902832|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590548
+2022-01-19T12:09:08,768 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590548
+2022-01-19T12:09:08,768 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6546.6015625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590548
+2022-01-19T12:09:08,768 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8822.79296875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590548
+2022-01-19T12:09:08,768 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:60.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590548
+2022-01-19T12:10:08,720 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590608
+2022-01-19T12:10:08,721 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.58600616455078|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590608
+2022-01-19T12:10:08,721 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.0409851074219|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590608
+2022-01-19T12:10:08,721 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590608
+2022-01-19T12:10:08,721 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6515.1328125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590608
+2022-01-19T12:10:08,721 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8853.45703125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590608
+2022-01-19T12:10:08,721 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:60.2|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590608
+2022-01-19T12:11:08,725 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590668
+2022-01-19T12:11:08,725 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.58320999145508|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590668
+2022-01-19T12:11:08,725 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.0437812805176|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590668
+2022-01-19T12:11:08,726 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590668
+2022-01-19T12:11:08,726 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6573.671875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590668
+2022-01-19T12:11:08,726 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8794.44921875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590668
+2022-01-19T12:11:08,726 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:59.9|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590668
+2022-01-19T12:12:08,724 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590728
+2022-01-19T12:12:08,724 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.5811309814453|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590728
+2022-01-19T12:12:08,724 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.04586029052734|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590728
+2022-01-19T12:12:08,724 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590728
+2022-01-19T12:12:08,724 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6579.52734375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590728
+2022-01-19T12:12:08,724 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8788.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590728
+2022-01-19T12:12:08,724 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:59.8|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590728
+2022-01-19T12:13:08,715 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:100.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590788
+2022-01-19T12:13:08,715 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.5844841003418|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590788
+2022-01-19T12:13:08,715 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.04250717163086|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590788
+2022-01-19T12:13:08,715 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590788
+2022-01-19T12:13:08,715 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6543.22265625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590788
+2022-01-19T12:13:08,715 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8824.265625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590788
+2022-01-19T12:13:08,715 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:60.1|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590788
+2022-01-19T12:14:08,810 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590848
+2022-01-19T12:14:08,811 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.58274841308594|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590848
+2022-01-19T12:14:08,812 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.0442428588867|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590848
+2022-01-19T12:14:08,812 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590848
+2022-01-19T12:14:08,812 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6125.9765625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590848
+2022-01-19T12:14:08,812 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:9252.09375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590848
+2022-01-19T12:14:08,812 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:62.6|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590848
+2022-01-19T12:15:08,748 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590908
+2022-01-19T12:15:08,749 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.58079528808594|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590908
+2022-01-19T12:15:08,749 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.0461959838867|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590908
+2022-01-19T12:15:08,749 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590908
+2022-01-19T12:15:08,749 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6052.7734375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590908
+2022-01-19T12:15:08,749 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:9315.203125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590908
+2022-01-19T12:15:08,749 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:63.1|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590908
+2022-01-19T12:16:08,727 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590968
+2022-01-19T12:16:08,728 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.56049346923828|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590968
+2022-01-19T12:16:08,728 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.0664978027344|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590968
+2022-01-19T12:16:08,728 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590968
+2022-01-19T12:16:08,728 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6286.796875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590968
+2022-01-19T12:16:08,728 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:9029.546875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590968
+2022-01-19T12:16:08,728 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:61.6|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642590968
+2022-01-19T12:17:08,938 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591028
+2022-01-19T12:17:08,939 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.5541114807129|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591028
+2022-01-19T12:17:08,940 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.07287979125977|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591028
+2022-01-19T12:17:08,940 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591028
+2022-01-19T12:17:08,940 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6306.80078125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591028
+2022-01-19T12:17:08,940 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:9001.94921875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591028
+2022-01-19T12:17:08,940 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:61.5|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591028
+2022-01-19T12:18:08,943 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591088
+2022-01-19T12:18:08,944 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.5556640625|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591088
+2022-01-19T12:18:08,944 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.07132720947266|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591088
+2022-01-19T12:18:08,944 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591088
+2022-01-19T12:18:08,944 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6463.30859375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591088
+2022-01-19T12:18:08,945 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:9422.0078125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591088
+2022-01-19T12:18:08,945 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:60.6|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591088
+2022-01-19T12:26:30,238 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591590
+2022-01-19T12:26:30,239 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.56346893310547|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591590
+2022-01-19T12:26:30,239 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.0635223388672|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591590
+2022-01-19T12:26:30,239 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591590
+2022-01-19T12:26:30,239 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6822.6171875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591590
+2022-01-19T12:26:30,239 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8917.87109375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591590
+2022-01-19T12:26:30,239 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:58.4|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591590
+2022-01-19T12:27:30,040 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591650
+2022-01-19T12:27:30,040 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:159.55458450317383|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591650
+2022-01-19T12:27:30,041 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:306.0724067687988|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591650
+2022-01-19T12:27:30,041 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591650
+2022-01-19T12:27:30,041 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:7183.2734375|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591650
+2022-01-19T12:27:30,041 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8557.13671875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591650
+2022-01-19T12:27:30,041 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:56.2|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591650
+2022-01-19T12:28:30,047 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:100.0|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591710
+2022-01-19T12:28:30,047 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:159.55160903930664|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591710
+2022-01-19T12:28:30,047 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:306.075382232666|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591710
+2022-01-19T12:28:30,047 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:65.7|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591710
+2022-01-19T12:28:30,047 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6808.703125|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591710
+2022-01-19T12:28:30,047 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8926.13671875|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591710
+2022-01-19T12:28:30,047 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:58.4|#Level:Host|#hostname:mbptilhndemaria.students.clients.local,timestamp:1642591710
