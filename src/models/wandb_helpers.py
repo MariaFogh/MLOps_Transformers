@@ -8,7 +8,7 @@ def wandb_arg_parser():
 
     parser = argparse.ArgumentParser()
     args, leftovers = parser.parse_known_args()
-    config_defaults = {"learning_rate": 5e-5, "epochs": 10, "batch_size" : 8}
+    config_defaults = {"learning_rate": 5e-5, "epochs": 20, "batch_size" : 8}
 
     if hasattr(args, "epochs"):
         config_defaults["epochs"] = args.epochs

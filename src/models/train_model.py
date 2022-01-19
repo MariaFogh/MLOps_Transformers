@@ -62,6 +62,7 @@ def train_model():
     print(f"Training {num_epochs} epochs")
     model.train()
     for epoch in range(num_epochs):
+        print(f"Running epoch {epoch+1} of {num_epochs}")
         #metric = load_metric("accuracy")
         accuracy = 0.0
         train_loss = 0.0
@@ -83,8 +84,6 @@ def train_model():
             lr_scheduler.step()
             optimizer.zero_grad()
             #progress_bar.update(1)
-            if (ite > 5):
-                break
             
         #accuracy = metric.compute()
         accuracy = 100*(accuracy/num_batches)
@@ -94,12 +93,13 @@ def train_model():
         wandb.log(
             {"training_loss": train_loss / num_batches, "training_accuracy": accuracy}
         )
-        model.to(torch.device("cpu"))
-        model.save_pretrained(model_to_path)
-        print(f"Saved trained BERT model to path {model_to_path}")
-        wandb.log_artifact(model_to_path, name=f"finetuned_bert_{epoch+1}", type='model')
-        print(f"Uploaded trained BERT model to WandB from path {model_to_path}")
-        model.to(device)
+        if (epoch == 0) or ((epoch+1) % 5 == 0) or (epoch == (num_epochs-1)):
+            model.to(torch.device("cpu"))
+            model.save_pretrained(model_to_path)
+            print(f"Saved trained BERT model to path {model_to_path}")
+            wandb.log_artifact(model_to_path, name=f"finetuned_bert_{epoch+1}", type='model')
+            print(f"Uploaded trained BERT model to WandB from path {model_to_path}")
+            model.to(device)
 
 
 if __name__ == "__main__":
