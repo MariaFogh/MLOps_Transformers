@@ -1,14 +1,15 @@
 # -*- coding: utf-8 -*-
 import logging
+import os
 
 import torch
 from datasets import load_dataset
 from transformers import AutoTokenizer
-import os
 
 
 def save_datasets():
-    """Runs data processing scripts to turn raw data from (../raw) into
+    """
+    Runs data processing scripts to turn raw data from (../raw) into
     cleaned data ready to be analyzed (saved in ../processed).
     """
 
@@ -37,14 +38,12 @@ def save_datasets():
     full_train_dataset = tokenized_datasets["train"]
     full_eval_dataset = tokenized_datasets["test"]
 
-    print(small_eval_dataset)
+    os.makedirs(output_filepath, exist_ok=True)
 
-    # os.makedirs(output_filepath, exist_ok=True)
-
-    # torch.save(small_train_dataset, output_filepath + "/train_small.pt")
-    # torch.save(small_eval_dataset, output_filepath + "/eval_small.pt")
-    # torch.save(full_train_dataset, output_filepath + "/train.pt")
-    # torch.save(full_eval_dataset, output_filepath + "/eval.pt")
+    torch.save(small_train_dataset, output_filepath + "/train_small.pt")
+    torch.save(small_eval_dataset, output_filepath + "/eval_small.pt")
+    torch.save(full_train_dataset, output_filepath + "/train.pt")
+    torch.save(full_eval_dataset, output_filepath + "/eval.pt")
 
 
 if __name__ == "__main__":

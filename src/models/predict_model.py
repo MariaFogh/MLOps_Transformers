@@ -1,12 +1,16 @@
 import torch
 from torch.utils.data import DataLoader
 from transformers import AutoModelForSequenceClassification
-
 from wandb_helpers import wandb_arg_parser
+
 import wandb
 
 
 def test_model():
+    """
+    Tests the trained model using the small version of the evaluation dataset.
+    The accuracy and loss are calculated and logged using Wandb.
+    """
     input_filepath = "./data/processed"
     model_path = "./models/finetuned_bert"
     small_eval_dataset = torch.load(input_filepath + "/eval_small.pt")

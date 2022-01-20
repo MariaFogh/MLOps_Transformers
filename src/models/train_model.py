@@ -1,17 +1,19 @@
 from os.path import exists
 
 import torch
-import wandb
-
-# from datasets import load_metric
 from torch.utils.data import DataLoader
-
-# from tqdm.auto import tqdm
-from transformers import AdamW, AutoModelForSequenceClassification, get_scheduler
+from transformers import (AdamW, AutoModelForSequenceClassification,
+                          get_scheduler)
 from wandb_helpers import wandb_arg_parser
+
+import wandb
 
 
 def train_model():
+    """
+    Train the model using the small version of the training dataset.
+    The accuracy and loss are calculated and logged using WandB.
+    """
     input_filepath = "./data/processed"
     model_from_path = "./models/pretrained_bert"
     model_to_path = "./models/finetuned_bert"

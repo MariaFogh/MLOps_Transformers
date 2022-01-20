@@ -1,14 +1,19 @@
-import wandb
 import argparse
 from os import environ
 
+import wandb
+
+
 def wandb_arg_parser():
+    """
+    Argument parser for WandB.
+    """
     environ["WANDB_API_KEY"] = "719c09fb68fba7368ba93fd0b304d7e1a2fb1a4a"
     environ["WANDB_MODE"] = "online"
 
     parser = argparse.ArgumentParser()
     args, leftovers = parser.parse_known_args()
-    config_defaults = {"learning_rate": 5e-5, "epochs": 20, "batch_size" : 8}
+    config_defaults = {"learning_rate": 5e-5, "epochs": 20, "batch_size": 8}
 
     if hasattr(args, "epochs"):
         config_defaults["epochs"] = args.epochs
