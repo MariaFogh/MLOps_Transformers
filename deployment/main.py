@@ -62,4 +62,4 @@ def main(request):
     elif request_json and "message" in request_json:
         return make_html(request_json["message"])
     else:
-        return "Please provide URL parameter, messaage!"
+        return "Please provide URL parameter, message!"
