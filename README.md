@@ -28,7 +28,16 @@ The data is found in the [Huggingface Datasets library](https://github.com/huggi
 
 The BERT model was proposed in [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) by Jacob Devlin, Ming-Wei Chang, Kenton Lee and Kristina Toutanova. 
 
-We aim at fine-tuning the pre-trained BERT-model and thereby, hopefully include the logging tool Weights and Bias (wandb) in order to track the experiment and additionally, use the build-in feature for doing hyperparameter sweeping in wandb as well. 
+We aim at fine-tuning the pre-trained BERT-model and thereby, hopefully include the logging tool Weights and Bias (wandb) in order to track the experiment and additionally, use the build-in feature for doing hyperparameter sweeping in wandb as well.
+
+## Using Our API
+We created an API using Google Cloud Functions. The API works by downloading our trained BERT model from Google Cloud Storage, passing the message through the tokenizer, and making a prediction from the tokenized message. 
+An IMDB review can be passed on by the url parameter `message`.
+
+```bash
+curl https://europe-central2-mlops-transformers.cloudfunctions.net/bert-imdb2?message=""
+```
+If the <a href="https://europe-central2-mlops-transformers.cloudfunctions.net/bert-imdb2">cloud function</a> is opened in a browser, you will be provided with some nice memes as well to underline the validity of the predictions.
 
 Project Organization
 ------------
