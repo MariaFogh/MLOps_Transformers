@@ -10,14 +10,14 @@ A project using the [Transformers framework](https://github.com/huggingface/tran
 
 ## Overall objective
 
-This project will investigate how to use Machine Learning Operations tools in a project. We aim to exploit tools, including Cookiecutter for code structure to standardize the way of creating a project, Git to enable version control and collaboration, keep good coding practice (using e.g. Black eller Flake8), and automate hyperparameter optimization. To illustrate the usage of these tools, we have chosen the task of using a classifier to determine whether movie reviews are positive or negative.
+This project will investigate how to use Machine Learning Operations tools in a project. We aim to exploit tools, including Cookiecutter for code structure to standardize the way of creating a project, Git to enable version control and collaboration, keep good coding practice (using e.g. Black or Flake8), and automate hyperparameter optimization. To illustrate the usage of these tools, we have chosen the task of using a classifier to determine whether movie reviews are positive or negative.
 
 ## Framework
 
 In this project we intend to use the Transformers framework (repository from the 🤗 Huggingface group), which provides an array of pre-trained models,
 for various uses such as text, vision and audio. We will in this project work with text data in
 order to classify movie-ratings from IMDB, hence the reason for exploiting such framework.
-We will more specifically employ the model BERT (Bidirectional Encoder Representations From Transformers) 
+We will more specifically employ the model BERT (Bidirectional Encoder Representations from Transformers) 
 developed by Google, which is a Transformers-based machine-learning model for Natural Language Processing (NLP).
 
 ## Data
@@ -28,7 +28,16 @@ The data is found in the [Huggingface Datasets library](https://github.com/huggi
 
 The BERT model was proposed in [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) by Jacob Devlin, Ming-Wei Chang, Kenton Lee and Kristina Toutanova. 
 
-We aim at fine-tuning the pre-trained BERT-model and thereby, hopefully include the logging tool Weights and Bias (wandb) in order to track the experiment and additionally, use the build-in feature for doing hyperparameter sweeping in wandb as well. 
+We aim at fine-tuning the pre-trained BERT-model and thereby, hopefully include the logging tool Weights and Bias (wandb) in order to track the experiment and additionally, use the build-in feature for doing hyperparameter sweeping in wandb as well.
+
+## Using Our API
+We created an API using Google Cloud Functions. The API works by downloading our trained BERT model from Google Cloud Storage, passing the message through the tokenizer, and making a prediction from the tokenized message. 
+An IMDB review can be passed on by the url parameter `message`.
+
+```bash
+curl https://europe-central2-mlops-transformers.cloudfunctions.net/bert-imdb2?message=""
+```
+If the <a href="https://europe-central2-mlops-transformers.cloudfunctions.net/bert-imdb2">cloud function</a> is opened in a browser, you will be provided with some nice memes as well to underline the validity of the predictions.
 
 Project Organization
 ------------
