@@ -37,7 +37,7 @@ def make_html(msg):
     prediction = predictor(my_model, msg)
 
     ret = "<h2>You are requesting whether the following review from IMDB is positive or negative:</h2><br>"
-    ret += "<i>{msg}</i><br>"
+    ret += f"<i>{msg}</i><br>"
     if prediction > 0.5:
         ret += "<h2>BERT predicts that the review is: Positive 🤗</h2><br>"
         ret += '<img src="https://i.pinimg.com/736x/6a/50/88/6a508859a9a7fecd93672cf35249f8fb.jpg" width="500">'
