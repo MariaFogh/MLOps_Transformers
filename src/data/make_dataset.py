@@ -37,12 +37,14 @@ def save_datasets():
     full_train_dataset = tokenized_datasets["train"]
     full_eval_dataset = tokenized_datasets["test"]
 
-    os.makedirs(output_filepath, exist_ok=True)
+    print(small_eval_dataset)
 
-    torch.save(small_train_dataset, output_filepath + "/train_small.pt")
-    torch.save(small_eval_dataset, output_filepath + "/eval_small.pt")
-    torch.save(full_train_dataset, output_filepath + "/train.pt")
-    torch.save(full_eval_dataset, output_filepath + "/eval.pt")
+    # os.makedirs(output_filepath, exist_ok=True)
+
+    # torch.save(small_train_dataset, output_filepath + "/train_small.pt")
+    # torch.save(small_eval_dataset, output_filepath + "/eval_small.pt")
+    # torch.save(full_train_dataset, output_filepath + "/train.pt")
+    # torch.save(full_eval_dataset, output_filepath + "/eval.pt")
 
 
 if __name__ == "__main__":

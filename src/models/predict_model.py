@@ -26,23 +26,26 @@ def test_model():
     model.eval()
     accuracy = 0.0
     validation_loss = 0.0
-    for ite,batch in enumerate(eval_dataloader):
-        print(f"\tRunning batch {ite+1} of {num_batches}", end='\r')
+    for ite, batch in enumerate(eval_dataloader):
+        print(f"\tRunning batch {ite+1} of {num_batches}", end="\r")
         batch = {k: v.to(device) for k, v in batch.items()}
         with torch.no_grad():
             outputs = model(**batch)
 
         logits = outputs.logits
         predictions = torch.argmax(logits, dim=-1)
-        accuracy += sum(predictions == batch["labels"])/predictions.numel()
+        accuracy += sum(predictions == batch["labels"]) / predictions.numel()
         loss = outputs.loss
         validation_loss += loss.item()
-        
 
-    accuracy = 100*(accuracy/num_batches)
+    accuracy = 100 * (accuracy / num_batches)
     wandb.log(
-            {"validation_loss": validation_loss / num_batches, "validation_accuracy": accuracy}
-        )
+        {
+            "validation_loss": validation_loss / num_batches,
+            "validation_accuracy": accuracy,
+        }
+    )
+
 
 if __name__ == "__main__":
     test_model()
