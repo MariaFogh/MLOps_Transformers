@@ -11,6 +11,9 @@ N_test = 1000
 
 @pytest.mark.skipif(not os.path.exists(folder), reason="Data files not found")
 def test_data_length():
+    """
+    Tests whether the data is the correct size to prepare for training.
+    """
     train_data = torch.load(folder + "/train_small.pt")
     test_data = torch.load(folder + "/eval_small.pt")
     assert (
@@ -23,6 +26,9 @@ def test_data_length():
 
 @pytest.mark.skipif(not os.path.exists(folder), reason="Data files not found")
 def test_dataset_features():
+    """
+    Tests whether the datasets have all necessary feature keys for the model.
+    """
     train_data = torch.load(folder + "/train_small.pt")
     test_data = torch.load(folder + "/eval_small.pt")
     assert set(train_data.features.keys()) == set(
@@ -36,6 +42,9 @@ def test_dataset_features():
 
 @pytest.mark.skipif(not os.path.exists(folder), reason="Data files not found")
 def test_dimensions():
+    """
+    Tests the dimensions of the features.
+    """
     train_data = torch.load(folder + "/train_small.pt")
     test_data = torch.load(folder + "/eval_small.pt")
 
@@ -48,6 +57,9 @@ def test_dimensions():
 
 @pytest.mark.skipif(not os.path.exists(folder), reason="Data files not found")
 def test_labels():
+    """
+    Tests whether both positive and negative reviews are included in the datasets.
+    """
     train_data = torch.load(folder + "/train_small.pt")
     test_data = torch.load(folder + "/eval_small.pt")
 
