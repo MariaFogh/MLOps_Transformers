@@ -1,3 +1,7 @@
+"""
+Scripts a trained model using tracing
+"""
+
 import torch
 from torch.utils.data import DataLoader
 from transformers import AutoModelForSequenceClassification

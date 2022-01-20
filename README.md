@@ -23,7 +23,7 @@ developed by Google, which is a Transformers-based machine-learning model for Na
 ### Flowchart
 
 <p align="center">
-  <img src="./reports/figures/Flowchart1.png" width="1000" title="hover text">
+  <img src="./reports/figures/Flowchart1.png" width="1500" title="hover text">
 </p>
 
 ## Data
@@ -39,7 +39,7 @@ We aim at fine-tuning the pre-trained BERT-model and thereby, hopefully include 
 ### Flowchart
 
 <p align="center">
-  <img src="./reports/figures/Flowchart.png" width="1000" title="hover text">
+  <img src="./reports/figures/Flowchart.png" width="500" title="hover text">
 </p>
 
 ### Model Results

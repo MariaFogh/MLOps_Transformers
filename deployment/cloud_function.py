@@ -1,3 +1,6 @@
+"""
+Script that stores the model using Pickle
+"""
 import pickle
 
 from transformers import AutoModelForSequenceClassification
