@@ -39,17 +39,17 @@ We aim at fine-tuning the pre-trained BERT-model and thereby, hopefully include 
 ### Flowchart
 
 <p align="center">
-  <img src="./reports/figures/Flowchart.png" width="1000" title="hover text">
+  <img src="./reports/figures/Flowchart.png" width="500" title="hover text">
 </p>
 
 ### Model Results
 
 <p align="left">
-  <img src="./reports/figures/272172443_986582445611735_2550441020930592831_n.png" width="350" title="hover text">
+  <img src="./reports/figures/272172443_986582445611735_2550441020930592831_n.png" width="500" title="hover text">
 </p>
 
 <p align="right">
-  <img src="./reports/figures/271943840_633337364658264_5304040351466165747_npng" width="350" title="hover text">
+  <img src="./reports/figures/271943840_633337364658264_5304040351466165747_npng" width="500" title="hover text">
 </p>
 
 
