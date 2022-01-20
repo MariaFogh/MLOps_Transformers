@@ -43,7 +43,7 @@ We aim at fine-tuning the pre-trained BERT-model and thereby, hopefully include 
 </p>
 
 <p align="right">
-  <img src="./reports/figures/Mod2.png" width="500" title="hover text">
+  <img src="./reports/figures/271943840_633337364658264_5304040351466165747_npng" width="500" title="hover text">
 </p>
 
 
