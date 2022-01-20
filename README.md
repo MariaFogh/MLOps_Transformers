@@ -60,7 +60,7 @@ An IMDB review can be passed on by the url parameter `message`.
 ```bash
 curl https://europe-central2-mlops-transformers.cloudfunctions.net/bert-imdb2?message=""
 ```
-If the <a href="https://europe-central2-mlops-transformers.cloudfunctions.net/bert-imdb2">cloud function</a> is opened in a browser, you will be provided with some nice memes as well to underline the validity of the predictions.
+If the <a href="https://europe-central2-mlops-transformers.cloudfunctions.net/bert-imdb2">cloud function</a> is opened in a browser, you will be provided with a meme to further underline the validity of the predictions.
 
 Project Organization
 ------------
