@@ -20,6 +20,12 @@ order to classify movie-ratings from IMDB, hence the reason for exploiting such 
 We will more specifically employ the model BERT (Bidirectional Encoder Representations from Transformers) 
 developed by Google, which is a Transformers-based machine-learning model for Natural Language Processing (NLP).
 
+### Flowchart
+
+<p align="center">
+  <img src="./reports/figures/Flowchart1.png" width="1000" title="hover text">
+</p>
+
 ## Data
 
 The data is found in the [Huggingface Datasets library](https://github.com/huggingface/datasets/) and consists of IMDB ratings. They have provided 25,000 highly polar movie reviews for training and 25,000 for testing. They also include an unlabelled version of the data. Specifically, the dataset contains a ‘text’ column, which is a string of the written review in itself and a ‘label’ column with possible values 0 and 1, describing whether it is a negative or positive review, respectively.
@@ -30,13 +36,13 @@ The BERT model was proposed in [BERT: Pre-training of Deep Bidirectional Transfo
 
 We aim at fine-tuning the pre-trained BERT-model and thereby, hopefully include the logging tool Weights and Bias (wandb) in order to track the experiment and additionally, use the build-in feature for doing hyperparameter sweeping in wandb as well.
 
-## Flowchart
+### Flowchart
 
 <p align="center">
   <img src="./reports/figures/Flowchart.png" width="1000" title="hover text">
 </p>
 
-## Model Results
+### Model Results
 
 <p align="left">
   <img src="./reports/figures/272172443_986582445611735_2550441020930592831_n.png" width="500" title="hover text">
