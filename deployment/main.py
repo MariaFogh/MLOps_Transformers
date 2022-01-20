@@ -1,3 +1,7 @@
+"""
+Script used for deploying the model in Cloud along with requirements.txt
+"""
+
 import pickle
 
 import torch
