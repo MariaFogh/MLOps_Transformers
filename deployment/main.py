@@ -40,7 +40,7 @@ def make_html(msg):
     ret += f"<i>{msg}</i><br>"
     if prediction > 0.5:
         ret += "<h2>BERT predicts that the review is: Positive 🤗</h2><br>"
-        ret += '<img src="https://i.pinimg.com/736x/6a/50/88/6a508859a9a7fecd93672cf35249f8fb.jpg" width="500">'
+        ret += '<img src="https://i.pinimg.com/736x/6a/50/88/6a508859a9a7fecd93672cf35249f8fb.jpg" width="300">'
     else:
         ret += "<h2>BERT predicts that the review is: Negative</h2><br>"
         ret += '<img src="https://venturephotography.com.au/wp-content/uploads/2017/05/del_badmeme.jpg" width="500">'
