@@ -13,3 +13,4 @@ transformers==4.15.0
 wandb==0.12.9
 scikit-learn==1.0.2
 pytest==6.2.5
+protobuf==3.19.3

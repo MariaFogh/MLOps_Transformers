@@ -42,7 +42,7 @@ We aim at fine-tuning the pre-trained BERT-model and thereby, hopefully include 
   <img src="./reports/figures/Flowchart.png" width="1000" title="hover text">
 </p>
 
-### Logging from WANDB
+### Logging
 
 <p align="center">
   <img src="./reports/figures/272172443_986582445611735_2550441020930592831_n.png" width="500" title="hover text">
@@ -52,8 +52,13 @@ We aim at fine-tuning the pre-trained BERT-model and thereby, hopefully include 
   <img src="./reports/figures/271943840_633337364658264_5304040351466165747_n.png" width="500" title="hover text">
 </p>
 
+### Coverage
 
-## Using Our API
+<p align="center">
+  <img src="./reports/figures/coverage-report.png" width="500" title="hover text">
+</p>
+
+## Using our API
 We created an API using Google Cloud Functions. The API works by downloading our trained BERT model from Google Cloud Storage, passing the message through the tokenizer, and making a prediction from the tokenized message. 
 An IMDB review can be passed on by the url parameter `message`.
 
