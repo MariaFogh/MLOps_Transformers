@@ -42,7 +42,7 @@ We aim at fine-tuning the pre-trained BERT-model and thereby, hopefully include 
   <img src="./reports/figures/Flowchart.png" width="1000" title="hover text">
 </p>
 
-### Logging from WANDB
+### Logging
 
 <p align="center">
   <img src="./reports/figures/272172443_986582445611735_2550441020930592831_n.png" width="500" title="hover text">
@@ -51,6 +51,12 @@ We aim at fine-tuning the pre-trained BERT-model and thereby, hopefully include 
 <p align="center">
   <img src="./reports/figures/271943840_633337364658264_5304040351466165747_n.png" width="500" title="hover text">
 </p>
+
+<p align="center">
+  <img src="./reports/figures/coverage-report.png" width="500" title="hover text">
+</p>
+
+
 
 
 ## Using our API
