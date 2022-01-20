@@ -53,7 +53,7 @@ We aim at fine-tuning the pre-trained BERT-model and thereby, hopefully include 
 </p>
 
 
-## Using Our API
+## Using our API
 We created an API using Google Cloud Functions. The API works by downloading our trained BERT model from Google Cloud Storage, passing the message through the tokenizer, and making a prediction from the tokenized message. 
 An IMDB review can be passed on by the url parameter `message`.
 
