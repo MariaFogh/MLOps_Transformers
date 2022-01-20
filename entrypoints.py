@@ -1,6 +1,7 @@
 import sys
-sys.path.append('./src/models/')
-sys.path.append('./src/data/')
+
+sys.path.append("./src/models/")
+sys.path.append("./src/data/")
 print(sys.path)
 from make_dataset import save_datasets
 from train_model import train_model
