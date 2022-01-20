@@ -1,0 +1,6 @@
+# Function dependencies, for example:
+# package>=version
+transformers==4.15.0
+google-cloud-storage==1.44.0
+scikit-learn==1.0.2
+torch==1.10.1
