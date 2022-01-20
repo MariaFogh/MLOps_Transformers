@@ -42,7 +42,7 @@ We aim at fine-tuning the pre-trained BERT-model and thereby, hopefully include 
   <img src="./reports/figures/Flowchart.png" width="1000" title="hover text">
 </p>
 
-### Model Results
+### Logging from WANDB
 
 <p align="center">
   <img src="./reports/figures/272172443_986582445611735_2550441020930592831_n.png" width="500" title="hover text">
