@@ -30,6 +30,12 @@ The BERT model was proposed in [BERT: Pre-training of Deep Bidirectional Transfo
 
 We aim at fine-tuning the pre-trained BERT-model and thereby, hopefully include the logging tool Weights and Bias (wandb) in order to track the experiment and additionally, use the build-in feature for doing hyperparameter sweeping in wandb as well.
 
+## Flowchart
+
+<p align="center">
+  <img src="./reports/figures/Flowchart.png" width="500" title="hover text">
+</p>
+
 ## Using Our API
 We created an API using Google Cloud Functions. The API works by downloading our trained BERT model from Google Cloud Storage, passing the message through the tokenizer, and making a prediction from the tokenized message. 
 An IMDB review can be passed on by the url parameter `message`.
