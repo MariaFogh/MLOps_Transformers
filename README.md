@@ -33,8 +33,19 @@ We aim at fine-tuning the pre-trained BERT-model and thereby, hopefully include 
 ## Flowchart
 
 <p align="center">
-  <img src="./reports/figures/Flowchart.png" width="500" title="hover text">
+  <img src="./reports/figures/Flowchart.png" width="1000" title="hover text">
 </p>
+
+## Model Results
+
+<p align="left">
+  <img src="./reports/figures/Mod1.png" width="500" title="hover text">
+</p>
+
+<p align="right">
+  <img src="./reports/figures/Mod2.png" width="500" title="hover text">
+</p>
+
 
 ## Using Our API
 We created an API using Google Cloud Functions. The API works by downloading our trained BERT model from Google Cloud Storage, passing the message through the tokenizer, and making a prediction from the tokenized message. 
