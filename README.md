@@ -52,12 +52,11 @@ We aim at fine-tuning the pre-trained BERT-model and thereby, hopefully include 
   <img src="./reports/figures/271943840_633337364658264_5304040351466165747_n.png" width="500" title="hover text">
 </p>
 
+### Coverage
+
 <p align="center">
   <img src="./reports/figures/coverage-report.png" width="500" title="hover text">
 </p>
-
-
-
 
 ## Using our API
 We created an API using Google Cloud Functions. The API works by downloading our trained BERT model from Google Cloud Storage, passing the message through the tokenizer, and making a prediction from the tokenized message. 
