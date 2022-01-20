@@ -32,14 +32,14 @@ def make_html(msg):
     my_model = pickle.loads(blob.download_as_string())
     prediction = predictor(my_model, msg)
 
-    ret = "<h2>You are asking if the following review is positive or negative:</h2><br>"
+    ret = "<h2>You are requesting whether the following review from IMDB is positive or negative:</h2><br>"
     ret += "<i>{msg}</i><br>"
     if prediction > 0.5:
-        ret += "<h2>BERT thinks it is positive</h2><br>"
-        ret += '<img src="https://i.pinimg.com/736x/6a/50/88/6a508859a9a7fecd93672cf35249f8fb.jpg">'
+        ret += "<h2>BERT predicts that the review is: Positive 🤗</h2><br>"
+        ret += '<img src="https://i.pinimg.com/736x/6a/50/88/6a508859a9a7fecd93672cf35249f8fb.jpg" width="500">'
     else:
-        ret += "<h2>BERT thinks it is negative</h2><br>"
-        ret += '<img src="https://venturephotography.com.au/wp-content/uploads/2017/05/del_badmeme.jpg">'
+        ret += "<h2>BERT predicts that the review is: Negative</h2><br>"
+        ret += '<img src="https://venturephotography.com.au/wp-content/uploads/2017/05/del_badmeme.jpg" width="500">'
     return ret
 
 
