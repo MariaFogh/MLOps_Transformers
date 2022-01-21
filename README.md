@@ -23,7 +23,7 @@ developed by Google, which is a Transformers-based machine-learning model for Na
 ### Flowchart
 
 <p align="center">
-  <img src="./reports/figures/Flowchart1.png" width="1000" title="hover text">
+  <img src="./reports/figures/Flowchart2.png" width="1000" title="hover text">
 </p>
 
 ## Data
